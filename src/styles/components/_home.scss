@@ -1,0 +1,23 @@
+.services > img
+{
+    position: relative;
+    margin-bottom: $small;
+    border: 4px solid $gold;
+}
+
+.vision 
+{
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    font-family: $Abel;
+    letter-spacing: 1px;
+    margin-bottom: $large;
+    padding: $small;
+}
+.vision > h2
+{
+    font-family: $Livvic;
+    font-size: $large;
+    letter-spacing: 10px;
+    text-align: center;
+}

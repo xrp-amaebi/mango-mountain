@@ -1,0 +1,13 @@
+.player {
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 28;
+    transition: transform .25s cubic-bezier(.455,.03,.515,.955) .5s,width .2s,height .2s;
+    will-change: transform,width,height;
+    transform: translateY(150%) translateZ(0);
+    padding: 0;
+    min-width: 220px;
+}

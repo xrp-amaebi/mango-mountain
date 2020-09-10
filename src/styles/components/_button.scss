@@ -1,0 +1,72 @@
+.button
+{
+    background: none;
+    border-left: 4px solid $off-white;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    font-family: $Abel;
+    font-size: $font-size-small;
+    font-weight: 300;
+    letter-spacing: .7px;
+    line-height: 2;
+    padding: $small;
+    text-decoration: none;
+    transition: .3s animate ease-in-out ;
+}
+
+.button > option
+{
+    background: rgba(0, 0, 0, 1);
+    border: none;
+    color: $off-white;
+    font-weight: 300;
+    margin-bottom: $small;
+    letter-spacing: 2px;
+}
+
+.button-handle
+{
+    box-sizing: border-box;
+    background: transparentize($color: $gold, $amount: 0.9);
+    border-radius: 6px;
+    border-right: 3px solid $off-white;
+    display: flex;
+    flex-direction: row;
+    font-family: $Rune;
+    font-size: $medium;
+    height: auto;
+    justify-content: space-evenly;
+    padding: $small;
+    position: relative;
+    top: 0;
+    width: auto; 
+}
+
+#nameTag
+{
+    border-left: 3px solid $off-white;
+    font-size: $large;
+    letter-spacing: 6px;
+}
+
+.button__one
+{
+    align-items: center;
+    background: none;
+    border: none;
+    display: flex;
+    flex-direction: column-reverse;
+    font-family: $Rune;
+    font-size: $medium;
+    letter-spacing: 2px;
+
+}
+
+.button--link
+{   
+    background: none;
+    flex-direction: row-reverse;
+    border: none;
+}   

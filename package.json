@@ -1,0 +1,41 @@
+{
+  "name": "novelty-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "live": "live-server public/",
+    "build": "webpack",
+    "dev": "webpack-dev-server"
+  },
+  "author": "Amaebi Amara",
+  "license": "ISC",
+  "dependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.1",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "1.5.2",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^0.28.11",
+    "express": "^4.17.1",
+    "live-server": "^1.2.1",
+    "node-sass": "^4.14.1",
+    "normalize.css": "^7.0.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-elastic-carousel": "^0.7.4",
+    "react-modal": "^2.2.2",
+    "react-redux": "^5.0.5",
+    "react-router-dom": "^5.1.2",
+    "redux": "^3.7.2",
+    "redux-thunk": "^2.2.0",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.18.2",
+    "validator": "^8.0.0",
+    "webpack": "^3.1.0",
+    "webpack-dev-server": "^2.11.5"
+  }
+}

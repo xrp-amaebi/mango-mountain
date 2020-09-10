@@ -1,0 +1,34 @@
+.header
+{
+    margin-bottom: $large;
+}
+
+.header__content
+{
+    align-items: center;
+    display: flex;
+    font-family: $Rune;
+    font-size: $medium;
+    justify-content: space-between;
+    letter-spacing: 1.5px;
+    padding: $small 0;
+}
+
+.header__title:hover
+{
+    border-radius: 5px;
+    padding: 1.0rem;
+    font-weight: 600;
+    font-size: $large;
+}
+
+.header__title
+{
+    color: white;
+    text-decoration: none;
+    transition: .3s ease-in-out;
+    
+    h1 {
+        margin: 0;
+    }
+}

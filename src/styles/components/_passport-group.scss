@@ -1,0 +1,30 @@
+.kontainer {
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+    grid-template-rows: auto;
+    height: 50%;
+    margin-top: $large;
+    width: 80%;
+}
+
+.passport__group
+{
+    margin: $small;
+}
+
+.passport__group > img
+{
+    opacity: .6;
+}
+
+.passport__group > img:hover
+{
+    border: 2px solid $gold;
+    height: 130px;
+    opacity: 1;
+    transform-style: preserve-3d;
+    transform: scale(1.02);
+    transition: .3s all ease;
+    // width: 100px;
+}
