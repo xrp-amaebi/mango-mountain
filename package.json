@@ -1,13 +1,15 @@
 {
-  "name": "novelty-project",
+  "name": "Mango-Mountain",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "live": "live-server public/",
-    "build": "webpack",
-    "dev": "webpack-dev-server"
+    "build:dev": "webpack",
+    "build:prod": "webpack -p --env production",
+    "dev": "webpack-dev-server",
+    "start": "node server/server.js",
+    "heroku-postbuild": "yarn run build:prod"
   },
   "author": "Amaebi Amara",
   "license": "ISC",
