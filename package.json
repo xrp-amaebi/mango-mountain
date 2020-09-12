@@ -5,11 +5,9 @@
   "main": "index.js",
   "scripts": {
     "live": "live-server public/",
-    "build:dev": "webpack",
-    "build:prod": "webpack -p --env production",
+    "build": "webpack",
     "dev": "webpack-dev-server",
-    "start": "node server/server.js",
-    "heroku-postbuild": "yarn run build:prod"
+    "start": "node server/server.js"
   },
   "author": "Amaebi Amara",
   "license": "ISC",
