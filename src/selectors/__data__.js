@@ -29,13 +29,57 @@ export class DashBoard extends React.Component {
             PROPERTIES: ['N/A'],
             DESCRIPTION: ['N/A'],
             COMMAND: "BASIC_ATTACKS",
+            SENSOR: '',
             KHARACTER,
             KAST,
             isValid
         };
     };
 
+    onSensor(read) {
+        const sensor = document.getElementById('sensor');
+        let value = '';
+        if( read == 0 ) {
+            value = "ADVANTAGE"
+        } else if (read < 0) {
+            if( read < -7 ){
+                value = "UNSAFE"
+                if (read < -11) {
+                    value = "PUNISH"
+                }
+            } else {
+                value = "SAFE"
+            }
+        } else if (read > 0 ) {
+            value = 'PLUS_FRAME'
+        } else {
+            value = 'PUNISH';
+        }    
+        
+        switch (value) {
+            case 'SAFE':
+                this.setState({ SENSOR: 'BLUE'});
+                return sensor.style.backgroundColor = 'blue';;
+            case 'PUNISH':
+                this.setState({ SENSOR: 'RED' });
+                return sensor.style.backgroundColor = 'red';;
+            case 'UNSAFE':
+                this.setState({ SENSOR: 'GRAY' });
+                return sensor.style.backgroundColor = 'gray';
+            case 'ADVANTAGE':
+                this.setState({ SENSOR: 'PURPLE' });
+                return sensor.style.backgroundColor = 'purple';
+            case 'PLUS_FRAME':
+                this.setState({ SENSOR: 'GOLD' });
+                return sensor.style.backgroundColor = 'gold';
+            default:
+                this.setState({ SENSOR: 'WHITE' });
+                return sensor.style.backgroundColor = 'white';;
+        };
+    };
+
     showData({ MOVE_TYPE, DAMAGE, BLOCK_DAMAGE, STARTUP, FBLOCK_DAMAGE, ACTIVE, RECOVERY, CANCEL_ADV, HIT_ADV, BLOCK_ADV, FBLOCK_ADV, VARIATION, PROPERTIES, DESCRIPTION }) {
+        const SENSOR = this.onSensor(BLOCK_ADV);
         return this.setState({
             MOVE_TYPE,
             DAMAGE,
@@ -50,7 +94,8 @@ export class DashBoard extends React.Component {
             FBLOCK_ADV,
             VARIATION,
             PROPERTIES,
-            DESCRIPTION
+            DESCRIPTION,
+            SENSOR
         });
     };
 
@@ -66,7 +111,7 @@ export class DashBoard extends React.Component {
             KHARACTER
         });
     };
-   
+
     render() {
         const { 
             isValid,
@@ -122,7 +167,7 @@ export class DashBoard extends React.Component {
                                     ('')
                             }
                         </div>
-                        <View  {...this.state} />
+                        <View  {...this.state} sensor={this.onSensor} />
                     </div>
                     <div className={'rift'}></div>
                     <div className={'content-container kontainer'}>

@@ -1,0 +1,34 @@
+
+.universal
+{
+    margin: $small;
+    padding: $small 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 5px;
+}
+#universal__title
+{
+    font-size: $font-size-small;
+}
+
+.header 
+{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.menu
+{
+
+}
+
+.content 
+{
+
+}
+.footer
+{
+
+}

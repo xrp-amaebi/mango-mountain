@@ -5,7 +5,7 @@ html
 
 body
 {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Industrial, Arial, Helvetica, sans-serif;
     font-size: $medium;
     background: #ebebeb;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -51,82 +51,4 @@ code
 .btn:disabled
 {
     cursor: default;
-}
-
-.box 
-{
-    background: rgba(0, 0, 0, 0.8);
-    border: 1px solid $gold;
-    border-radius: 10px;
-    box-sizing: border-box;
-    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
-    left: 50%;
-    padding: 40px;
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%, 50%);
-    width: 400px; 
-}
-
-.box h2 
-{
-    color: #fff;
-    margin: 0 0 30px;
-    padding: 0;
-    text-align: center;
-}
-
-.box .inputBox 
-{
-    position: relative;
-}
-
-.box .inputBox input 
-{
-    border: none;
-    border-right: 2px solid $gold;
-    background: transparent;
-    color: #ebebeb;
-    font-size: 16px;
-    letter-spacing: 1px;
-    margin-bottom: 30px;
-    outline: none;
-    padding: 10px 0;
-    width: 100%;
-}
-
-.box .inputBox label 
-{
-    color: #ebebeb;
-    font-size: 14px;
-    left: 0;
-    letter-spacing: 1px;
-    position: absolute;
-    padding: 10px 0;
-    pointer-events: none;
-    top: 0;
-    transition: 0.5s;
-}
-
-.box .inputBox input:valid ~ label,
-.box .inputBox input:focus ~ label
-{
-    color: $gold;
-    font-size: 12px;
-    left: 0;
-    top: -20px;
-}
-
-.box input[type="submit"]
-{
-    background: $gold;
-    border: none;
-    border-radius: 5px;
-    color: #ebebeb;
-    cursor: pointer;
-    font-family: monospace;
-    font-size: 11px;
-    letter-spacing: 1px;
-    outline: none;
-    padding: 8px 10px;
 }

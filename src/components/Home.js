@@ -8,30 +8,24 @@ export const HomePage = (props) => {
             <Header />
             {   
                 <div className={'content-container'}> 
-                    {/* <Welcome />    */} 
-                    <div>
-                        <h1>PROFESSIONAL SERVICES</h1>
-                        <ol>
-                            <li>WEBSITE DEVELOPMENT</li>
-                            <li>AD_HOC TOURNAMENT PLANNING</li>
-                            <li>COACHING</li>
-                            <li>COMMENTARY</li>
-                            <li>STREAMING SOLUTIONS</li>
-                        </ol>
-                    </div>
                     <div className={'services'}>
                         <h1>COACHELLA</h1>
-                        <img src="img/bg1.jpg" alt="FIrewood" width="800" height="450" />
+                        <img src="img/carousel/1.jpg" alt="FIrewood" width="700" height="450" />
                         <p>Lorem Ipsum dolor sit alum</p>
                     </div>
                     <div className={'services'}>
                         <h1>WORLD CLASS COMMENTARY</h1>
-                        <img src="img/bg1.jpg" alt="FIrewood" width="900" height="450" />
+                        <img src="img/carousel/5.jpg" alt="FIrewood" width="700" height="450" />
                         <p>Lorem Ipsum dolor sit alum</p>
                     </div>
                     <div className={'services'}>
                         <h1>STREAMING SOLUTIONS</h1>
-                        <img src="img/bg1.jpg" alt="FIrewood" width="900" height="450" />
+                        <img src="img/carousel/9.jpg" alt="FIrewood" width="700" height="450" />
+                        <p>Lorem Ipsum dolor sit alum</p>
+                    </div>
+                    <div className={'services'}>
+                        <h1>TOURNAMENT</h1>
+                        <img src="img/carousel/4.jpg" alt="FIrewood" width="700" height="450" />
                         <p>Lorem Ipsum dolor sit alum</p>
                     </div>
                     <div className={'vision content__write'}> 

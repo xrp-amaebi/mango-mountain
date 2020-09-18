@@ -15,7 +15,8 @@ export const View = ({
     FBLOCK_ADV,
     VARIATION,
     PROPERTIES,
-    DESCRIPTION
+    DESCRIPTION,
+    SENSOR
 }) => (
     <div className={'frame-box dataScroll'} >
         <h5 className={'frame-box__header '}>MOVE DATA</h5>
@@ -43,16 +44,20 @@ export const View = ({
             <div>
                 <code>DESCRIPTION</code>
                 <span>
-                        {DESCRIPTION.map((text, i) => <li>{text}</li>)} 
+                    {DESCRIPTION.map((text, i) => <li>{text}</li>)} 
                 </span>
             </div>
             <div>
                 <code>PROPERTIES</code>
-                    <span>{PROPERTIES.map((text, i) => <li>{text}</li>)}</span>
+                <span>{PROPERTIES.map((text, i) => <li>{text}</li>)}</span>
+            </div>
+            <div>
+                <code>SENSOR</code>
+                <span id="sensor"></span>
             </div>
         </div>
 
-            <h5 className={'frame-box__header '}>FRAME DATA</h5>
+        <h5 className={'frame-box__header '}>FRAME DATA</h5>
         <div className={'order'}>
             <div>
                 <code>STARTUP</code>
