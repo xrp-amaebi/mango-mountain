@@ -27,17 +27,7 @@ export const HomePage = (props) => {
                     <caption>TOURNAMENT</caption>
                     <img src="img/carousel/4.jpg" alt="FIrewood" width="700" height="450" />
                 </div>
-                <div className={'vision content__write'}> 
-                    <div>
-                        <p>Our Primary aim is to encapsulate all major Electonic Sport activities under the Umbrella of a gaming community.</p>
-                        <p>We hope on making a platform where growth and community thrives</p>
-                    </div>
-                </div>
-                <footer className={'footer'}>
-                    <code>There is no Knowledge that is not Power...</code>
-                </footer>
             </div>
-            
         </div>
     )
 };
