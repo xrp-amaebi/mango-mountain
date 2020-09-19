@@ -42,14 +42,7 @@
     padding: $small;
     position: relative;
     top: 0;
-    width: auto; 
-}
-
-#nameTag
-{
-    border-left: 3px solid $off-white;
-    font-size: $large;
-    letter-spacing: 6px;
+    width: calc(100% - 20px); 
 }
 
 .button__one
@@ -67,7 +60,16 @@
 
 .button--link
 {   
+    width: 65px;
+    height: auto;
     background: none;
     flex-direction: row-reverse;
     border: none;
+    margin-right: $large;
+
+    @media (max-width: $break-point) {
+        width: 65px;
+        height: auto;
+        margin-right: 0.1rem;
+    }
 }   

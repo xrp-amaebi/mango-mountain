@@ -3,10 +3,10 @@ import { Header } from './Header';
 import { Welcome } from './Welcome';
 
 export const HomePage = (props) => {
-    return (
+    return(
         <div>
             {/* {className = { 'content-container'} */}
-            <div className={''}> 
+            <div className={'content-container'}> 
                 <Header />
                 <div className="rift"></div>
                 

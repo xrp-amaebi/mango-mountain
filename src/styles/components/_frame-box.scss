@@ -1,3 +1,10 @@
+.nameTag
+{
+    border-left: 3px solid $off-white;
+    font-size: $large;
+    letter-spacing: 6px;
+}
+
 .frame-box 
 {
     background: transparent;
@@ -10,7 +17,13 @@
     height: 60vh;
     padding: 20px;
     position: relative;
-    width: 40vw;
+    width: 45vw;
+
+    @media (max-width: $break-point) {
+        width: calc(100% - 15px);
+        height: 60vh;
+        margin-right: 0.1rem;
+    }
 }
 
 .frame-box__header 

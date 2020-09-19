@@ -13,6 +13,7 @@ import Block from "./Buttons/BlockButton";
 import Down from "./Buttons/DownButton";
 import FrontKick from "./Buttons/FrontKick";
 import Throw from "./Buttons/ThrowButton";
+import FrontButton from "./Buttons/FrontButton";
 
 
 export const Universal = () => (
@@ -42,7 +43,7 @@ export const Universal = () => (
                             </tr>
                             <tr className={'table__row'}>
                                 <td >{'[F]'}</td>
-                                <td><Up /></td>
+                                <td><FrontButton /></td>
                             </tr>
                             <tr className={'table__row'}>
                                 <td >{'[D]'}</td>

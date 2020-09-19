@@ -125,28 +125,29 @@ export class DashBoard extends React.Component {
             return (
                 <div>
                     <Header />
+                    <div className="rift"></div>
+                    <div className={'content-container button-handle nameTag'} id={'nameTag'} >
+                        {KHARACTER.bioText ? KHARACTER.bioText : 'N/A'}
+                    </div>
                     <div className={'content-container'}>
                         <img src={`${KHARACTER.fullImg ? KHARACTER.fullImg : null}`} />
                     </div>
-                    <div className={'content-container button-handle'} id={'nameTag'} >
-                        {KHARACTER.bioText ? KHARACTER.bioText : 'N/A'}
-                    </div>
+                    <span className={'content-container button-handle nameTag'}>
+                        <button onClick={() => this.onCommand('BASIC_ATTACKS')}
+                            className={'button button__one'}
+                        >BASIC</button>
+                        <button onClick={() => this.onCommand('SPECIAL_MOVES')}
+                            className={'button button__one'}
+                        >SPECIALS</button>
+                        <button onClick={() => this.onCommand('KOMBO_ATTACKS')}
+                            className={'button button__one'}
+                        >KOMBO</button>
+                        <button onClick={() => this.onCommand('FINISHERS')}
+                            className={'button button__one'}
+                        >FINISHERS</button>
+                    </span>
                     <div className="content-container content-shift">
-                        <div className={'frame-box  dataScroll view'}>
-                            <span className={'button-handle'}>
-                                <button onClick={() => this.onCommand('BASIC_ATTACKS')}
-                                    className={'button button__one'}
-                                >BASIC</button>
-                                <button onClick={() => this.onCommand('SPECIAL_MOVES')}
-                                    className={'button button__one'}
-                                >SPECIALS</button>
-                                <button onClick={() => this.onCommand('KOMBO_ATTACKS')}
-                                    className={'button button__one'}
-                                >KOMBO</button>
-                                <button onClick={() => this.onCommand('FINISHERS')}
-                                    className={'button button__one'}
-                                >FINISHERS</button>
-                            </span>
+                        <div className={'frame-box dataScroll'}>
                             {
                                 KHARACTER ?
                                    KHARACTER[COMMAND].map((obj, i) => {
@@ -173,7 +174,7 @@ export class DashBoard extends React.Component {
                         <View  {...this.state} sensor={this.onSensor} />
                     </div>
                     <div className={'rift'}></div>
-                    <div className={'content-container kontainer'}>
+                    <div className={'content-container src-tier-list'}>
                         {
                             KAST.map(key => <button className={'button--link'} onClick={() => this.onPress(key)}>
                                 <PassPort {...this.props.kharacters[key]} />
@@ -184,7 +185,6 @@ export class DashBoard extends React.Component {
                     </div>
                     <div className={'rift'}></div>
                     <footer className={'footer'}>
-                        <code>...version 1.19 </code>
                         <Kontroller />
                     </footer>
                 </div>

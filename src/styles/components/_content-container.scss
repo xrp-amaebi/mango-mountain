@@ -19,4 +19,8 @@
     align-items: center;
     display: flex;
     justify-content: center;
+
+    @media (max-width: $break-point) {
+        flex-direction: column;
+    }
 }
