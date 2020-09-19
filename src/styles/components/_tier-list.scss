@@ -1,7 +1,7 @@
 .tier
 {
     display: flex;
-    width: calc(100% - 86px);
+    width: calc(100% - 20px);
     height: auto;
     min-height: 86px;
 }
@@ -59,7 +59,7 @@
     border-top: 1px solid white;
     border-right: 1px solid white;
     border-bottom: 1px solid white;
-    width: calc(100% - 86px);
+    width: calc(100% - 20px);
     height: auto;
     min-height: 86px;
 }
@@ -71,7 +71,7 @@
     flex-direction: row;
     flex-wrap: wrap-reverse;
     justify-content: center;
-    width: calc(100% - 80px);
+    width: calc(100% - 20px);
     height: auto;
     min-height: 86px;
 }
