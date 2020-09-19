@@ -22,6 +22,10 @@ export const View = ({
         <h5 className={'frame-box__header '}>MOVE DATA</h5>
         <div className={'order'}>
             <div>
+                <code>SENSOR</code>
+                <span id="sensor"></span>
+            </div>
+            <div>
                 <code>MOVE TYPE</code>
                 <span>{MOVE_TYPE}</span>
             </div>
@@ -50,10 +54,6 @@ export const View = ({
             <div>
                 <code>PROPERTIES</code>
                 <span>{PROPERTIES.map((text, i) => <li>{text}</li>)}</span>
-            </div>
-            <div>
-                <code>SENSOR</code>
-                <span id="sensor"></span>
             </div>
         </div>
 

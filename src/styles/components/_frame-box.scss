@@ -30,14 +30,16 @@
 {
     align-items: center;
     box-sizing: border-box;
-    background: transparentize($color: $gold, $amount: 0.9);
+    // background: transparentize($color: $gold, $amount: 0.9);
+    background: none;
     border-radius: 6px;
-    border-right: 3px solid $off-white;
+    border-left: 3px solid $off-white;
     color: gold;
     font-family: $Rune;
-    font-size: $medium;
-    letter-spacing: 4px;
+    font-size: $font-size-large;
+    letter-spacing: 6px;
     padding: $small;
+    text-align: center;
 }
 
 .frame-box .order 
@@ -46,6 +48,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    flex-grow: 1;
     text-align: center;
     width: auto;
     margin-bottom: $medium;

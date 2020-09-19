@@ -27,3 +27,8 @@
     border: none;
     color: $gold;
 }
+
+.table .table__row > td > button:active
+{
+    border: 4px solid transparentize($color: $gold, $amount: 0.1);
+}
