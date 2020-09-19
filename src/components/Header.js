@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import SelectForm from './SelectForm';
+import Controller from './SelectForm';
 
 
 export const Header = () => {
@@ -11,7 +11,6 @@ export const Header = () => {
                 <Link className={'header__title'} to='/guides'>GUIDES</Link>
                 <Link className={'header__title'} to='/tierlist'>TIERLIST</Link>
                 <Link className={'header__title'} to='/about'>ABOUT</Link>
-                {/* <SelectForm /> */}
             </header>
         </div>
     );  

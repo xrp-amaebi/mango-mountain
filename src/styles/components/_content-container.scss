@@ -5,6 +5,15 @@
     padding: 0 $medium;
 } 
 
+.content-container > img
+{
+    @media (max-width: $break-point) {
+        position: relative;
+        width: 375px;
+        height: auto;
+    }
+}
+
 .content-shift
 {
     align-items: center;

@@ -1,6 +1,9 @@
 .tier
 {
     display: flex;
+    width: calc(100% - 86px);
+    height: auto;
+    min-height: 86px;
 }
 
 .tier > span
@@ -71,6 +74,18 @@
     width: calc(100% - 80px);
     height: auto;
     min-height: 86px;
+}
+
+.src-tier-list > div > img 
+{
+    @media (max-width: $break-point) {
+        background-size: cover;
+        position: relative;
+        top: 0;
+        left: $small;
+        width: 65px;
+        height: 87px;
+    }
 }
 
 .rift

@@ -1,5 +1,6 @@
 import React from "react";
 import { Header } from "./Header";
+import Kontroller from '../components/SelectForm';
 import { Link } from 'react-router-dom';
 import Amplify from "./Buttons/AmplifyButton";
 import BackPunch from "./Buttons/BackPunch";
@@ -28,11 +29,11 @@ export const Universal = () => (
                     <h2>UNIVERSAL CONTROLLER PRESET</h2>
                     <p>
                         This is an accepted preset adopted to alleviate controversy in understanding what buttons refer to each controller input across the widespread conventional methods(SONY, XBOX, PC, Nintendo).<br />
-                        
-                        To begin with please avoid the use of Analog Sticks for Mortal Kombat or any NRS game, always use the D-PAD and simply slide or dial-in the inputs.<br/>
-                        <i>Get Familiar with the Notations and Terminologies for Playing</i>
                     </p>
-
+                    <p>
+                        To begin with please avoid the use of Analog Sticks for Mortal Kombat or any NRS game, always stick to the D-PAD and simply slide across or rythmically dial-in inputs.<br />
+                    </p>
+                    <p><i>Get Familiar with the Notations and Terminologies for Playing</i></p>
                     <table className={'table'}>
                         <tbody className={'table__body'}>
                             <tr className={'table__row'}>
@@ -129,11 +130,11 @@ export const Universal = () => (
                         </tbody>
                     </table>
                 </div>
-                <div>
+                {/* <div>
                     <h2>ATTACKS AND HOW TO DEFEND THEM </h2>
                     <p>
                         In this game and most fighting games there are multiple types of attack, here I will be showing you their types and how to best defend against them.
-                </p>
+                    </p>
                     <h3>HIGHS</h3>
                     <p>You simply duck in the neutral without holding the Block Button, highs are good for anti-airing jumping opponents mid-air</p>
                     <h3>LOW</h3>
@@ -147,12 +148,12 @@ export const Universal = () => (
                     <h3>COMMAND THROWS</h3>
                     <p>
                         Command Throws could either hit as HIGHS or MIDS then You may DUCK in the neutral against high command-throws to make them Whiff or jump out of position, but You must jump out of MID COMMAND-THROWS you cannot hold block button at all or DUCK.<br />
-                Please Note COMMAND THROWS CANNOT BE TECH-ED
-                </p>
+                        Please Note COMMAND THROWS CANNOT BE TECH-ED
+                    </p>
                     <h3>UNBLOCKABLES</h3>
                     <p>
                         As the name implies, you have to get out of dodge with attacks like this by either jumping away or performing a forward Dash or Backdash.
-                </p>
+                    </p>
                 </div>
                 <div>
                     <h2>FRAME DATA</h2>
@@ -184,18 +185,18 @@ export const Universal = () => (
                         In summary the more the value on block the better the advantage of the move and you keep your turn, the lesser you lose your turn.
                     </p>
                     </section>
-                    <div>
-                        <h2>MORE TERMS</h2>
-                        <h3>PUNISH</h3>
-                        <p>
-                            This means that
-                    </p>
-                    </div>
                 </div>
+                <div>
+                    <h2>MORE TERMS</h2>
+                    <h3>PUNISH</h3>
+                    <p>
+                        This means that
+                        </p>
+                </div> */}
             </div>
         </div>
-        <div className="Footer">
-            <h1 id='universal__title'>WELCOME TO THE FIGHTING GAME COMMUNITY</h1>
+        <div className="footer">
+            <Kontroller />
         </div>
     </div>
 );

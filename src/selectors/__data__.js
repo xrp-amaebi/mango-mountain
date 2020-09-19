@@ -5,6 +5,7 @@ import { displayInputs } from '../selectors/__movelist__';
 import { Header } from '../components/Header';
 import { View } from './__view__';
 import { NotFound } from '../components/NotFound';
+import Kontroller from '../components/SelectForm';
 
 
 export class DashBoard extends React.Component {
@@ -54,7 +55,7 @@ export class DashBoard extends React.Component {
             value = 'PLUS_FRAME'
         } else {
             value = 'PUNISH';
-        }    
+        };   
         
         switch (value) {
             case 'SAFE':
@@ -62,7 +63,7 @@ export class DashBoard extends React.Component {
                 return sensor.style.backgroundColor = 'blue';;
             case 'PUNISH':
                 this.setState({ SENSOR: 'RED' });
-                return sensor.style.backgroundColor = 'red';;
+                return sensor.style.backgroundColor = 'red';
             case 'UNSAFE':
                 this.setState({ SENSOR: 'GRAY' });
                 return sensor.style.backgroundColor = 'gray';
@@ -124,7 +125,9 @@ export class DashBoard extends React.Component {
             return (
                 <div>
                     <Header />
-                    <div className={'content-container'}><img src={`${KHARACTER.fullImg ? KHARACTER.fullImg : null}`} /></div>
+                    <div className={'content-container'}>
+                        <img src={`${KHARACTER.fullImg ? KHARACTER.fullImg : null}`} />
+                    </div>
                     <div className={'content-container button-handle'} id={'nameTag'} >
                         {KHARACTER.bioText ? KHARACTER.bioText : 'N/A'}
                     </div>
@@ -182,6 +185,7 @@ export class DashBoard extends React.Component {
                     <div className={'rift'}></div>
                     <footer className={'footer'}>
                         <code>...version 1.19 </code>
+                        <Kontroller />
                     </footer>
                 </div>
             );

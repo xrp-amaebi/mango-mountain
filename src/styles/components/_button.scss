@@ -1,9 +1,10 @@
+
 .button
 {
     background: none;
     border-left: 4px solid $off-white;
     border-radius: 5px;
-    color: white;
+    color: $off-white;
     cursor: pointer;
     display: flex;
     font-family: $Abel;
@@ -11,7 +12,7 @@
     font-weight: 300;
     letter-spacing: .7px;
     line-height: 2;
-    padding: $small;
+    padding: 0.5rem;
     text-decoration: none;
     transition: .3s animate ease-in-out ;
 }

@@ -86,6 +86,7 @@ export class TierList extends React.Component {
         return (
             <div>
                 <Header />
+                <div className="rift"></div>
                 <div>
                     {
                         this.state.NOT.map((tier, i) => <div className={'tier'} key={i}>
@@ -137,8 +138,7 @@ export class TierList extends React.Component {
                 </div>
             </div>
         );
-    }
-     
+    }; 
 };
 
 const mapStateToProps = (state) => ({...state.platform});

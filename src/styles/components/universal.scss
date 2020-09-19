@@ -4,10 +4,21 @@
     margin: $small;
     padding: $small 0;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 400px 400px 400px;
     grid-gap: 5px;
+
+    @media (max-width: $break-point)
+    {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
+        grid-gap: 5px;
+        flex-wrap: wrap;
+    }
+
 }
+
 #universal__title
 {
     font-size: $font-size-small;
