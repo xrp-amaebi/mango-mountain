@@ -1,6 +1,7 @@
 .table
 {   
     border-bottom: 1px solid rgba(235, 235, 235, .3);
+    border-top: 1px solid rgba(235, 235, 235, .3);
     height: auto;
     margin-bottom: $small ;
     padding: 0;
@@ -11,7 +12,7 @@
 {
     font-family: $Norse;
     font-size: $medium;
-    letter-spacing: 3px;;
+    letter-spacing: 3px;
 }
 
 .table .table__row > td:nth-child(1)

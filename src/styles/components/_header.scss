@@ -1,6 +1,6 @@
 .header
 {
-    margin-bottom: $large;
+    margin-bottom: $small;
 }
 
 .header__content
@@ -8,9 +8,10 @@
     align-items: center;
     display: flex;
     font-family: $Rune;
-    font-size: $medium;
+    font-size: $font-size-small;
     justify-content: space-between;
-    letter-spacing: 1.5px;
+    align-items: flex-end;
+    letter-spacing: 1.36px;
     padding: $small 0;
 }
 
@@ -31,4 +32,9 @@
     h1 {
         margin: 0;
     }
+}
+
+@media (max-width: $break-point)
+{
+
 }

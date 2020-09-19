@@ -16,13 +16,13 @@ import Throw from "./Buttons/ThrowButton";
 
 export const Universal = () => (
     <div>
-        <div className="header">
+        <div className="Header">
             <Header />
         </div>
-        <div className="menu">
+        <div className="Menu">
 
         </div>
-        <div className="content">
+        <div className="Content">
             <div className={'universal'}>
                 <div>
                     <h2>UNIVERSAL CONTROLLER PRESET</h2>
@@ -194,7 +194,7 @@ export const Universal = () => (
                 </div>
             </div>
         </div>
-        <div className="footer">
+        <div className="Footer">
             <h1 id='universal__title'>WELCOME TO THE FIGHTING GAME COMMUNITY</h1>
         </div>
     </div>

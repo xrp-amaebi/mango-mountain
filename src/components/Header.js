@@ -11,7 +11,7 @@ export const Header = () => {
                 <Link className={'header__title'} to='/guides'>GUIDES</Link>
                 <Link className={'header__title'} to='/tierlist'>TIERLIST</Link>
                 <Link className={'header__title'} to='/about'>ABOUT</Link>
-                <SelectForm />
+                {/* <SelectForm /> */}
             </header>
         </div>
     );  

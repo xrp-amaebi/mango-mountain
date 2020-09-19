@@ -1,8 +1,25 @@
+.services
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: $Livvic;
+    font-size: $font-size-large;
+    letter-spacing: 4px;
+    text-transform: uppercase; 
+    margin-bottom: $large;
+    position: relative;
+}
+
 .services > img
 {
+    background-size: cover;
     position: relative;
     margin-bottom: $small;
-    border: 4px solid $gold;
 }
 
 .vision 
@@ -20,4 +37,17 @@
     font-size: $large;
     letter-spacing: 10px;
     text-align: center;
+}
+
+@media (max-width: $break-point) 
+{
+    .services > img 
+    {
+        background-size: cover;
+        position: relative;
+        top: 0;
+        left: $small;
+        width: 350px;
+        height: auto;
+    }
 }

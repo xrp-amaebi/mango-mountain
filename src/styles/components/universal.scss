@@ -4,8 +4,8 @@
     margin: $small;
     padding: $small 0;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 400px 400px 400px;
     grid-gap: 5px;
 }
 #universal__title
@@ -13,22 +13,23 @@
     font-size: $font-size-small;
 }
 
-.header 
+.Header 
 {
-    grid-column-start: 1;
-    grid-column-end: 3;
+    grid-column: 1 / -1;
+    background-color: lime;
 }
 
-.menu
+.Menu
 {
-
+    
 }
 
-.content 
+.Content 
 {
-
+    grid-column: 2 / -1;
 }
-.footer
+.Footer
 {
-
+    grid-column: 1 / -1;
+    background-color: orange;
 }
