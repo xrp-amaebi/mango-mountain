@@ -4,9 +4,17 @@ $gold: #fcaf01;
 $dark-grey: #333333;
 $grey: #666;
 $blue: #1c88bf;
-$off-white: #f7f7f7;
+$off-white: #f7f7f7; 
+// $off-white: #0f0; 
+
+:root
+{
+    // --theme-color: rgba(255, 0, 0, 1);
+    --theme-color: rgb(255, 2, 255, 0.4);
+}
 
 // font size
+$font-size-xlarge: 2.1rem;
 $font-size-large: 1.8rem;
 $font-size-small: 1.4rem;
 

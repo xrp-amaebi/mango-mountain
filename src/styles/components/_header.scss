@@ -7,6 +7,7 @@
 {
     align-items: center;
     display: flex;
+    flex-direction: column;
     font-family: $Rune;
     font-size: $font-size-small;
     justify-content: space-between;
@@ -15,23 +16,30 @@
     padding: $small 0;
 }
 
-.header__title:hover
-{
-    border-radius: 5px;
-    padding: 1.0rem;
-    font-weight: 600;
-    font-size: $large;
-}
+
 
 .header__title
 {
     color: white;
     text-decoration: none;
     transition: .3s ease-in-out;
-    
+    margin: $large;
+    font-size: $font-size-large;
+    letter-spacing: 3px;
+
     h1 {
         margin: 0;
     }
+}
+
+.header__title:hover
+{
+    border-radius: 5px;
+    // padding: $large;
+    font-weight: 600;
+    color: $gold;
+    font-size: $font-size-xlarge;
+    letter-spacing: 5px;
 }
 
 @media (max-width: $break-point)

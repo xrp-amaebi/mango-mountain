@@ -23,7 +23,9 @@ export const View = ({
         <div className={'order'}>
             <div>
                 <code>SENSOR</code>
-                <span id="sensor"></span>
+                <span>
+                    <i id="sensor" className="indicator"></i>
+                </span>
             </div>
             <div>
                 <code>MOVE TYPE</code>
@@ -64,24 +66,24 @@ export const View = ({
                 <span>{STARTUP}</span>
             </div>
             <div>
-                <code>ACTIVE</code>
-                <span>{ACTIVE}</span>
-            </div>
-            <div>
-                <code>RECOVERY</code>
-                <span>{RECOVERY}</span>
-            </div>
-            <div>
-                <code>CANCEL ADV</code>
-                <span>{CANCEL_ADV}</span>
+                <code>BLOCK ADV</code>
+                <span>{BLOCK_ADV}</span>
             </div>
             <div>
                 <code>HIT ADV</code>
                 <span>{HIT_ADV}</span>
             </div>
             <div>
-                <code>BLOCK ADV</code>
-                <span>{BLOCK_ADV}</span>
+                <code>RECOVERY</code>
+                <span>{RECOVERY}</span>
+            </div>
+            <div>
+                <code>ACTIVE</code>
+                <span>{ACTIVE}</span>
+            </div>
+            <div>
+                <code>CANCEL ADV</code>
+                <span>{CANCEL_ADV}</span>
             </div>
             <div>
                 <code>F/BLOCK ADV</code>

@@ -3,7 +3,7 @@
     // border-bottom: 1px solid rgba(235, 235, 235, .3);
     border-top: 1px solid rgba(235, 235, 235, .3);
     height: auto;
-    margin-bottom: $small ;
+    margin-bottom: 0.2rem ;
     padding: 0;
     width: auto;
 }
@@ -13,6 +13,12 @@
     font-family: $Norse;
     font-size: $medium;
     letter-spacing: 3px;
+}
+
+.table .table__row:hover
+{
+    background: linear-gradient(rgba(36, 31, 15, 0.9), transparentize($color: $gold, $amount: 0.9));
+    padding: $small;
 }
 
 .table .table__row > td:nth-child(1)

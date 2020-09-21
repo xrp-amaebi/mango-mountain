@@ -38,44 +38,52 @@ export class DashBoard extends React.Component {
     };
 
     onSensor(read) {
-        const sensor = document.getElementById('sensor');
+        
         let value = '';
-        if( read == 0 ) {
+        if( read >= 0) {
+            // if (read == 3) {
+            //     return value = 'PLUS';
+            // }
             value = "ADVANTAGE"
         } else if (read < 0) {
             if( read < -7 ){
                 value = "UNSAFE"
                 if (read < -11) {
-                    value = "PUNISH"
+                    value = "PUNISH";
                 }
             } else {
-                value = "SAFE"
+                value = "SAFE";
             }
-        } else if (read > 0 ) {
-            value = 'PLUS_FRAME'
         } else {
-            value = 'PUNISH';
+            value = 'PLUS';
         };   
         
+        let sensor = document.getElementById('sensor');
         switch (value) {
             case 'SAFE':
                 this.setState({ SENSOR: 'BLUE'});
-                return sensor.style.backgroundColor = 'blue';;
+                sensor.style.setProperty('--theme-color', '#0000ff');
+                break;
             case 'PUNISH':
                 this.setState({ SENSOR: 'RED' });
-                return sensor.style.backgroundColor = 'red';
+                sensor.style.setProperty('--theme-color', '#f00');
+                break;
             case 'UNSAFE':
-                this.setState({ SENSOR: 'GRAY' });
-                return sensor.style.backgroundColor = 'gray';
+                this.setState({ SENSOR: 'YELLOW' });
+                sensor.style.setProperty('--theme-color', '#ff0');
+                break;
             case 'ADVANTAGE':
                 this.setState({ SENSOR: 'PURPLE' });
-                return sensor.style.backgroundColor = 'purple';
-            case 'PLUS_FRAME':
-                this.setState({ SENSOR: 'GOLD' });
-                return sensor.style.backgroundColor = 'gold';
+                sensor.style.setProperty('--theme-color', '#ff00ff');
+                break;
+            case 'PLUS':
+                this.setState({ SENSOR: 'GREEN' });
+                sensor.style.setProperty('--theme-color', '#0f0');
+                break;
             default:
                 this.setState({ SENSOR: 'WHITE' });
-                return sensor.style.backgroundColor = 'white';;
+                sensor.style.setProperty('--theme-color', '#fff');
+                break;
         };
     };
 
@@ -126,7 +134,7 @@ export class DashBoard extends React.Component {
                 <div>
                     <Header />
                     <div className="rift"></div>
-                    <div className={'content-container button-handle nameTag'} id={'nameTag'} >
+                    <div className={'content-container button-handle nameTag'} id={'nameTag'}>
                         {KHARACTER.bioText ? KHARACTER.bioText : 'N/A'}
                     </div>
                     <div className={'content-container'}>

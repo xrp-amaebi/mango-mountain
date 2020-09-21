@@ -20,9 +20,6 @@ export const About = (props) => {
                         I make or moderate sports Commentary on Youtube where I talk about almost anthing relating to Electronic Sports and Fighting Gaming.
                     </p>
                     <p>
-                        I love what I do and most days I do it very well, So well sometimes I get invited to Tech Events and Tournaments... its all on Youtube.
-                    </p>
-                    <p>
                         This pet project  is one of many on my wishlist where I take random ideas and data from my favourite games and develop them as web applications.
                     </p>
                     <p>

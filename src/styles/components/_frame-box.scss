@@ -5,6 +5,11 @@
     letter-spacing: 6px;
 }
 
+.nameTag > button:active
+{
+    border: 1px solid $off-white;
+}
+
 .frame-box 
 {
     background: transparent;
@@ -17,7 +22,7 @@
     height: 60vh;
     padding: 20px;
     position: relative;
-    width: 45vw;
+    width: 49vw;
 
     @media (max-width: $break-point) {
         width: calc(100% - 15px);
@@ -92,6 +97,11 @@
     width: inherit;
 }
 
+.frame-box > div > div:nth-child(1) > span
+{
+    border: none;
+}
+
 .frame-box > div > div > code
 {
     font-family: $Montserrat;
@@ -103,9 +113,9 @@
     display: flex;
     flex-direction: column;
     height: 60vh;
-    justify-content: space-between;
+    justify-content: center;
     margin: $small;
-    width: 40vw;
+    width: 50%;
 }
 
 .view__special
@@ -121,5 +131,5 @@
     height: auto;
     padding: none;
     width: auto;
-    line-height: 2;
+    line-height: 1.6;
 }

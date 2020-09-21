@@ -5,7 +5,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     font-family: $Montserrat;
-    font-size: $font-size-large;
+    font-size: $font-size-small;
     letter-spacing: 1px;
     padding: $small;
     color: $off-white
@@ -29,11 +29,11 @@
 .content__write > div > p 
 {
     // background: $gold;
-    background: transparentize($color: $gold, $amount: .4);
+    background: rgba(252, 175, 1, 0.0);
     border-radius: 4px;
     border-left: 4px solid $off-white;
     border-right: 4px solid $off-white;
-    padding: $small;
+    padding: $medium;
     transition: .3s ease-in-out;
 }
 
@@ -44,7 +44,8 @@
     border-left: 4px solid $gold;
     border-right: 4px solid $gold;
     cursor: pointer;
-    font-weight: 600;
+    font-size: $font-size-small;
+    font-weight: 100;
     padding: $large;
 
     @media (max-width: $break-point)
@@ -53,5 +54,7 @@
         background-blend-mode: overlay;
         border-left: 4px solid $dark-blue;
         border-right: 4px solid $dark-blue;
+        font-weight: 100;
+        font-size: $font-size-small;
     }
 }

@@ -1,0 +1,153 @@
+.menu-wrap
+{
+   position: fixed;
+   top: 0;
+   left: 0;
+   z-index: 1;
+}
+
+.menu-wrap .toggler
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    opacity: 0;
+    background: rgba($color: #d3c015, $alpha: 0.0);
+}
+
+.menu-wrap .hamburger
+{
+    position: absolute;
+    top: 0;
+    left: 0; 
+    z-index: 1;
+    width: 25px;
+    height: 25px;
+    padding: 1rem;
+    background: rgba($color: #000000, $alpha: 0.0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+// Hamburger Lines
+
+.menu-wrap .hamburger > div 
+{
+    position: relative;
+    width: 100%;
+    height: 2px;
+    background-color: $off-white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .4s ease;
+}
+
+.menu-wrap .hamburger > div:before,
+.menu-wrap .hamburger > div:after
+{
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: -10px;
+    width: 100%;
+    height: 2px;
+    background: inherit;
+}
+
+.menu-wrap .hamburger > div:after
+{
+    top: 10px;
+}
+
+.menu-wrap .toggler:checked + .hamburger > div 
+{
+    transform: rotate(135deg);
+}
+
+.menu-wrap .toggler:checked + .hamburger > div:before,
+.menu-wrap .toggler:checked + .hamburger > div:after
+{
+    top: 0;
+    transform: rotate(90deg);
+}
+
+.menu-wrap .toggler:checked:hover + .hamburger > div
+{
+    transform: rotate(225deg);
+}
+
+.menu-wrap .toggler:checked ~ .menu
+{
+    visibility: visible;
+}
+
+.menu-wrap .toggler:checked ~ .menu > div
+{
+    transform: scale(1);
+    transition-duration: .75s;
+}
+
+.menu-wrap .toggler:checked ~ .menu > div > div 
+{
+    opacity: 1;
+    transition: opacity .75s ease;
+}
+
+.menu-wrap .menu
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-wrap .menu > div 
+{
+    // background: rgba(252, 175, 1, 1);
+    background: rgba(0, 0, 0, .95);
+    border-radius: 50%;
+    width: 200vw;
+    height: 200vw;
+    display: flex;
+    flex: none;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0);
+    transition: all .4s ease;
+}
+
+.menu-wrap .menu > div > div 
+{
+    text-align: center;
+    max-width: 90vw;
+    max-height: 100vh;
+    transition: opacity .4s ease;
+}
+
+
+.menu-wrap .menu > div > div > ul > li
+{
+    list-style: none;
+    color: $off-white;
+    font-size: $font-size-small;
+    padding: 1rem;
+}
+
+.menu-wrap .menu > div > div > ul > li > a
+{
+    color: inherit;
+    text-decoration: none;
+    transition: color ease .4s ease;
+}
