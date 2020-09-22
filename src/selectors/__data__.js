@@ -41,9 +41,6 @@ export class DashBoard extends React.Component {
         
         let value = '';
         if( read >= 0) {
-            // if (read == 3) {
-            //     return value = 'PLUS';
-            // }
             value = "ADVANTAGE"
         } else if (read < 0) {
             if( read < -7 ){

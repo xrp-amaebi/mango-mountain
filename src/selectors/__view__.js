@@ -23,8 +23,8 @@ export const View = ({
         <div className={'order'}>
             <div>
                 <code>SENSOR</code>
-                <span>
-                    <i id="sensor" className="indicator"></i>
+                <span id="sensor" className="indicator">
+                        <a href="/guides">''</a>
                 </span>
             </div>
             <div>
