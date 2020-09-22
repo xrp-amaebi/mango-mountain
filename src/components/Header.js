@@ -5,8 +5,9 @@ import Controller from './SelectForm';
 
 export const Header = () => {
     return (
+    <div className="header">
         <div className={'menu-wrap'}>
-            <input type="checkbox" className="toggler"/>
+            <input type="checkbox" className="toggler" />
             <div className="hamburger"><div></div></div>
             <div className="menu">
                 <div>
@@ -16,22 +17,12 @@ export const Header = () => {
                             <Link className={'header__title'} to='/guides'>GUIDES</Link>
                             <Link className={'header__title'} to='/tierlist'>TIERLIST</Link>
                             <Link className={'header__title'} to='/about'>ABOUT</Link>
+                            <Link className={'header__title'} to='/terminator'>KHARACTER</Link>
                         </div>
-                        {/* <ul className={"header__content"}>
-                            <li><Link className={'header__title'} to='/'>HOME</Link></li>
-                            <li><Link className={'header__title'} to='/guides'>GUIDES</Link></li>
-                            <li><Link className={'header__title'} to='/tierlist'>TIERLIST</Link></li>
-                            <li><Link className={'header__title'} to='/about'>ABOUT</Link></li>  
-                        </ul> */}
                     </div>
                 </div>
             </div>
-            {/* <header className={'header header__content'}>
-                <Link className={'header__title'} to='/'>HOME</Link>
-                <Link className={'header__title'} to='/guides'>GUIDES</Link>
-                <Link className={'header__title'} to='/tierlist'>TIERLIST</Link>
-                <Link className={'header__title'} to='/about'>ABOUT</Link>
-            </header> */}
         </div>
+    </div>
     );  
 };

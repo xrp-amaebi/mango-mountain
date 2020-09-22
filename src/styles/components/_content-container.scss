@@ -10,9 +10,18 @@
 
 .content-container
 {
-    margin: auto;
-    max-width: 100rem;
-    padding: 0 $medium;
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   grid-template-rows: 200px 200px;
+   grid-gap: 5px;
+
+   @media (max-width: $break-point) {
+       display: grid;
+       grid-template-columns: repeat(1, 1fr);
+       grid-template-rows: auto;
+       grid-gap: 5px;
+       flex-wrap: wrap;
+   }
 } 
 
 .image

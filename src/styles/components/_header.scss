@@ -1,6 +1,14 @@
 .header
 {
     margin-bottom: $small;
+    background: rgba($color: #fff, $alpha: .6);
+    border-radius: 6px;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+                    rgba(0, 0, 0, 0.5)),
+                    url("/img/bg1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .header__content

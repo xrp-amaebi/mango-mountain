@@ -152,7 +152,7 @@ export class DashBoard extends React.Component {
                             className={'button button__one'}
                         >FINISHERS</button>
                     </span>
-                    <div className="">
+                    <div className="content-container">
                         <div className={'frame-box dataScroll'}>
                             {
                                 KHARACTER ?
@@ -179,17 +179,6 @@ export class DashBoard extends React.Component {
                         </div>
                         <View  {...this.state} sensor={this.onSensor} />
                     </div>
-                    <div className={'rift'}></div>
-                    {/* <div className={'src-tier-list'}>
-                        {
-                            KAST.map(key => <button className={'button--link'} onClick={() => this.onPress(key)}>
-                                <PassPort {...this.props.kharacters[key]} />
-                            </button>
-
-                            )
-                        }
-                    </div> */}
-                    <div className={'rift'}></div>
                     <footer className={'footer'}>
                         <Kontroller />
                         <Form />
