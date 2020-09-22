@@ -3,20 +3,20 @@
 {
     border-radius: 4px;
    background: var(--theme-color);
-   box-shadow: 0 0 2px var(--theme-color),
-        0 0 5px var(--theme-color),
-        0 0 10px var(--theme-color),
-        0 0 15px var(--theme-color),
-        0 0 20px var(--theme-color),
-        0 0 25px var(--theme-color),
-        0 0 30px var(--theme-color);
-        // 0 0 40px var(--theme-color);
+   box-shadow: 0 0 10px var(--theme-color),
+        0 0 40px var(--theme-color),
+        0 0 80px var(--theme-color);
+        // 0 0 15px var(--theme-color),
+        // 0 0 20px var(--theme-color),
+        // 0 0 25px var(--theme-color),
+        // 0 0 30px var(--theme-color),
+        // 0 0 40px var(--theme-color),
+        // 0 0 80px var(--theme-color);
     content: '';
     height: 24.5px;
     left: 7%;
     position: absolute;
-    top: 35.5%;
-    opacity: .4;
+    top: 41%;
     transition: .5s;
     // transform: translate(-50%, -50%);
     width: 65px;

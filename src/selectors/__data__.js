@@ -62,7 +62,7 @@ export class DashBoard extends React.Component {
         switch (value) {
             case 'SAFE':
                 this.setState({ SENSOR: 'BLUE'});
-                sensor.style.setProperty('--theme-color', '#0000ff');
+                sensor.style.setProperty('--theme-color', '#2196f3');
                 break;
             case 'PUNISH':
                 this.setState({ SENSOR: 'RED' });
