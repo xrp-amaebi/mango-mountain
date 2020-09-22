@@ -11,7 +11,7 @@
     @media (max-width: $break-point)
     {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
         grid-template-rows: auto;
         grid-gap: 5px;
         flex-wrap: wrap;
@@ -22,23 +22,4 @@
 #universal__title
 {
     font-size: $font-size-small;
-}
-
-.Header 
-{
-    grid-column: 1 / -1;
-}
-
-.Menu
-{
-    
-}
-
-.Content 
-{
-    grid-column: 2 / -1;
-}
-.Footer
-{
-    grid-column: 1 / -1;
 }

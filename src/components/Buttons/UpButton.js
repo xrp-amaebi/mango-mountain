@@ -30,7 +30,7 @@ export const DPAD_UP = ({platform}) => (
             <img
                 alt={"jump"}
                 src={`${'img/universal/up.png'}`}
-                className={'universal'}
+                className={'universals'}
             />
         </div>
 );

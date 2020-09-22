@@ -30,7 +30,7 @@ export const RIGHT_BUMPER = ({ platform }) => (
             <img
                 alt={"amplify"}
                 src={`${'img/universal/amp.png'}`}
-                className={'universal'}
+                className={'universals'}
             />
         </div>
 );

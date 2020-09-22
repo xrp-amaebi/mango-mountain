@@ -30,7 +30,7 @@ export const DPAD_DOWN = ({platform}) => (
             <img
                 alt={"crouch"}
                 src={`${'img/universal/down.png'}`}
-                className={'universal'}
+                className={'universals'}
             />
         </div>
 );

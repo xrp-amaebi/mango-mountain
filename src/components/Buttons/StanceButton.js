@@ -30,7 +30,7 @@ export const LEFT_TRIGGER = ({platform}) => (
             <img
                 alt={"stance"}
                 src={`${'img/universal/stance.png'}`}
-                className={'universal'}
+                className={'universals'}
             />
         </div>
 );

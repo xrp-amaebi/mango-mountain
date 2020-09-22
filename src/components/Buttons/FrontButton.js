@@ -30,7 +30,7 @@ export const DPAD_RIGHT = ({ platform }) => (
             <img
                 alt={"Forward"}
                 src={`${'img/universal/right.png'}`}
-                className={'universal'}
+                className={'universals'}
             />
         </div>
 );

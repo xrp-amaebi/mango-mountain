@@ -6,6 +6,7 @@ import { Header } from '../components/Header';
 import { View } from './__view__';
 import { NotFound } from '../components/NotFound';
 import Kontroller from '../components/SelectForm';
+import Form from '../components/KharacterForm';
 
 
 export class DashBoard extends React.Component {
@@ -191,6 +192,7 @@ export class DashBoard extends React.Component {
                     <div className={'rift'}></div>
                     <footer className={'footer'}>
                         <Kontroller />
+                        <Form />
                     </footer>
                 </div>
             );

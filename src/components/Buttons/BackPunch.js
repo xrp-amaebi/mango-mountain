@@ -30,7 +30,7 @@ export const BACK_PUNCH = ({platform}) => (
             <img
                 alt={"back-punch"}
                 src={`${'img/universal/2.png'}`}
-                className={'universal'}
+                className={'universals'}
             />
         </div>
 );

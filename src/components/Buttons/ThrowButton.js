@@ -29,7 +29,7 @@ export const LEFT_BUMPER = ({platform}) => (
         </div>
     :
         <div>
-            <FRONT_PUNCH />+<FRONT_KICK />
+            <code>[THROW]</code>
         </div>
 );
 

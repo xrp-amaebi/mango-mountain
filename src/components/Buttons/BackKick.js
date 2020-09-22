@@ -30,7 +30,7 @@ export const BACK_KICK = ({platform}) => (
             <img
                 alt={"back-kick"}
                 src={`${'img/universal/4.png'}`}
-                className={'universal'}
+                className={'universals'}
             />
         </div>
 );

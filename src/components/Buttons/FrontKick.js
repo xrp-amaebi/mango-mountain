@@ -30,7 +30,7 @@ export const FRONT_KICK = ({platform}) => (
             <img
                 alt={"front-kick"}
                 src={`${'img/universal/3.png'}`}
-                className={'universal'}
+                className={'universals'}
             />
         </div>
 );

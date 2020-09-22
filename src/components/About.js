@@ -1,6 +1,7 @@
 import React from 'react';
 import { Header } from './Header';
 
+
 export const About = (props) => {
     return (
         <div>
@@ -30,6 +31,9 @@ export const About = (props) => {
                         No one likes filler content.
                     </p>
                 </div>
+            </div>
+            <div className="footer">
+                
             </div>
         </div>
     )

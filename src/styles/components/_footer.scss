@@ -3,6 +3,9 @@
     background: rgba(0, 0, 0, 0.8);
     bottom: 0;
     color: $gold;
+    width: 100%;
     margin-top: $small;
     position: fixed;
+    display: flex;
+    justify-content: space-between;
 }

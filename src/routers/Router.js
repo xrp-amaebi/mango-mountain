@@ -7,7 +7,9 @@ import { About } from '../components/About';
 import { NotFound } from '../components/NotFound';
 import TierList from '../components/TierList';
 import TournamentPage from '../components/TournamentPage';
+import createHistory from 'history/createBrowserHistory';
 
+export const history = createHistory();
 
 export const Router = () => (
     <BrowserRouter>
