@@ -16,13 +16,14 @@
     height: 24.5px;
     left: 7%;
     position: absolute;
-    top: 41%;
-    transition: .5s;
+    top: 40%;
+    transition: .75s;
     // transform: translate(-50%, -50%);
     width: 65px;
 
     @media (max-width: $break-point) {
         left: 11.4%;
-        top: 33.4%;
+        top: 41.4%;
+        width: 70px;
     }
 }
