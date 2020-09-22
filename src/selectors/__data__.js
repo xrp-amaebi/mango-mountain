@@ -131,13 +131,13 @@ export class DashBoard extends React.Component {
                 <div>
                     <Header />
                     <div className="rift"></div>
-                    <div className={'content-container button-handle nameTag'} id={'nameTag'}>
+                    <div className={' button-handle nameTag'} id={'nameTag'}>
                         {KHARACTER.bioText ? KHARACTER.bioText : 'N/A'}
                     </div>
-                    <div className={'content-container'}>
-                        <img src={`${KHARACTER.fullImg ? KHARACTER.fullImg : null}`} />
+                    <div className={'image'}>
+                        <img src={`${KHARACTER.fullImg ? KHARACTER.fullImg : null}`}  width='760'/>
                     </div>
-                    <span className={'content-container button-handle nameTag'}>
+                    <span className={'button-handle nameTag'}>
                         <button onClick={() => this.onCommand('BASIC_ATTACKS')}
                             className={'button button__one'}
                         >BASIC</button>
@@ -151,7 +151,7 @@ export class DashBoard extends React.Component {
                             className={'button button__one'}
                         >FINISHERS</button>
                     </span>
-                    <div className="content-container content-shift">
+                    <div className="">
                         <div className={'frame-box dataScroll'}>
                             {
                                 KHARACTER ?
@@ -179,7 +179,7 @@ export class DashBoard extends React.Component {
                         <View  {...this.state} sensor={this.onSensor} />
                     </div>
                     <div className={'rift'}></div>
-                    <div className={'content-container src-tier-list'}>
+                    {/* <div className={'src-tier-list'}>
                         {
                             KAST.map(key => <button className={'button--link'} onClick={() => this.onPress(key)}>
                                 <PassPort {...this.props.kharacters[key]} />
@@ -187,7 +187,7 @@ export class DashBoard extends React.Component {
 
                             )
                         }
-                    </div>
+                    </div> */}
                     <div className={'rift'}></div>
                     <footer className={'footer'}>
                         <Kontroller />

@@ -1,3 +1,13 @@
+.content-shift {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+    @media (max-width: $break-point) {
+        flex-direction: column;
+    }
+}
+
 .content-container
 {
     margin: auto;
@@ -5,22 +15,18 @@
     padding: 0 $medium;
 } 
 
-.content-container > img
+.image
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image > img 
 {
     @media (max-width: $break-point) {
         position: relative;
-        width: 375px;
+        width: 320px;
         height: auto;
-    }
-}
-
-.content-shift
-{
-    align-items: center;
-    display: flex;
-    justify-content: center;
-
-    @media (max-width: $break-point) {
-        flex-direction: column;
     }
 }

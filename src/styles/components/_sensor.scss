@@ -6,7 +6,8 @@
     border-radius: 5px;
     padding: 5px 10px;
     height: 15px;
-    color: var(--theme-color);
+    // color: var(--theme-color);
+    color: violet;
     text-transform: uppercase;
     letter-spacing: 5px;
     text-decoration: none;
@@ -19,4 +20,11 @@
     font-family: consolas;
     top: 10%;
     transition: .75s;
+}
+
+.order .indicator > a > div
+{
+    height: 10px;
+    width: 40px;
+    background: none;
 }

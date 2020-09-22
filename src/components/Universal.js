@@ -25,12 +25,14 @@ export const Universal = () => (
 
         </div>
         <div className="Content">
-            <div className={'universal'}>
+            <div className={'universal content__write'}>
                 <div>
-                    <h2>UNIVERSAL CONTROLLER PRESET</h2>
+                    <h2>UNIVERSAL PRESET</h2>
                     <p>
-                        This is an accepted preset adopted to alleviate controversy in understanding what buttons refer to each controller input across the widespread conventional methods(SONY, XBOX, PC, Nintendo).<br />
+                        This is an accepted preset adopted to alleviate controversy in understanding what buttons refer to each controller input across the widespread conventional console style<br/>
+                       <br />
                     </p>
+                    <p>SONY | XBOX | PC | NINTENDO</p>
                     <p>
                         To begin with please avoid the use of Analog Sticks for Mortal Kombat or any NRS game, always stick to the D-PAD and simply slide across or rythmically dial-in inputs.<br />
                     </p>

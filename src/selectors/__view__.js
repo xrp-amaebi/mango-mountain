@@ -18,13 +18,13 @@ export const View = ({
     DESCRIPTION,
     SENSOR
 }) => (
-    <div className={'frame-box dataScroll'} >
-        <h5 className={'frame-box__header '}>MOVE DATA</h5>
-        <div className={'order'}>
+    <div className={'frame-box order'} >
+        {/* <h5 className={'frame-box__header '}>MOVE DATA</h5>  */}
+        <div className={''}>
             <div>
                 <code>SENSOR</code>
                 <span id="sensor" className="indicator">
-                        <a href="/guides">''</a>
+                    <a href="/guides"><div></div></a>
                 </span>
             </div>
             <div>
@@ -59,8 +59,8 @@ export const View = ({
             </div>
         </div>
 
-        <h5 className={'frame-box__header '}>FRAME DATA</h5>
-        <div className={'order'}>
+        {/* <h5 className={'frame-box__header '}>FRAME DATA</h5> */}
+        <div className={''}>
             <div>
                 <code>STARTUP</code>
                 <span>{STARTUP}</span>
