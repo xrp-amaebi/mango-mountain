@@ -6,12 +6,10 @@ export const About = (props) => {
         <div>
             <Header />
             <div className="rift"></div>
-            <div className={'content-container content__write'}>
-                {/* <span><video src="/video/EA.mp4"  width="400" height="400" autoPlay controls></video></span> */}
-                <div>
-                    <img src="/img/carousel/10.jpg" alt="Hype" />
+            <div className={'content__write'}>
+                <div className={"image"}>
+                    <img src="/img/carousel/10.jpg" alt="Hype"/>
                 </div>
-                
                 <div>
                     <p>
                         Hi My Name is Phederal... Im an Avid Gamer, Tech Enthusiast and Software Developer, I come from Lagos Nigeria.

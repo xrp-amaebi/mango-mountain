@@ -11,21 +11,6 @@
     color: $off-white
 }
 
-.content__write > div > img
-{
-    width: auto;
-    height: auto;
-    position: relative;
-
-    @media (max-width: $break-point) {
-        background-size: cover;
-        position: relative;
-        top: 0;
-        left: $small;
-        width: 350px;
-        height: auto;
-    }
-}
 .content__write > div > p 
 {
     // background: $gold;
