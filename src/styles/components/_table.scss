@@ -1,22 +1,32 @@
 .table
 {   
-    border-bottom: 1px solid rgba(235, 235, 235, .3);
+    border-bottom: 1px solid rgba(235, 235, 235, .03);
+    border-right: 1px solid rgba(235, 235, 235, .03);
+    border-left: 1px solid rgba(235, 235, 235, .03);
+    border-top: 1px solid rgba(235, 235, 235, .03);
     height: auto;
-    margin-bottom: 0.2rem ;
+    margin-bottom: 0.4rem ;
     padding: 0;
     width: auto;
 }
+
+// .content-container .table 
+// {
+//     border-top: 1px solid rgba(235, 235, 235, .3);
+// }
 
 .table .table__row
 {
     font-family: $Norse;
     font-size: $medium;
     letter-spacing: 3px;
+    padding: $small;
 }
 
 .table .table__row:hover
 {
-    background: linear-gradient(rgba(36, 31, 15, 0.9), transparentize($color: $gold, $amount: 0.9));
+    // background: linear-gradient(to right, rgba(0, 0, 0, 0.75), rgba(8, 21, 29, 0.75), rgba(0, 0, 0, 0.75));
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.3), transparentize($color: $gold, $amount: 0.97), rgba(0, 0, 0, 0.3));
     padding: $small;
 }
 
