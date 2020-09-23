@@ -27,8 +27,9 @@ export class KharacterForm extends React.Component {
                         <option action='submit' value="default">Kharacter Select</option>
                         <option value="baraka">Baraka</option>
                         <option value="cassie">Cassie</option>
+                        <option value="cetrion">Cetrion</option>
                         <option value="dvorah">Dvorah</option>
-                        <option value="erron">Cetrion</option>
+                        <option value="erron">Erron</option>
                         <option value="frost">Frost</option>
                         <option value="fujin">Fujin</option>
                         <option value="geras">Geras</option>
