@@ -11,7 +11,7 @@ export class TierList extends React.Component {
         const KAST = this.props.kharacters;
         const KEYS = Object.keys(KAST);
         this.state = {
-            NOT: ['Z', 'S+', 'S', 'A'],
+            NOT: ['S+', 'S', 'A'],
             KAST,
             KEYS
         };
@@ -86,18 +86,25 @@ export class TierList extends React.Component {
         return (
             <div>
                 <Header />
-                <div className="rift"></div>
+                <div className="content__write">
+                    <div>
+                        <h3 className={'header__title'}>INSTRUCTIONS</h3>
+                        <p>Create your own tier list by dragging characters to the list below.</p>
+                        <p>To add, edit or remove a tier, click on their respective buttons on the left of the tiers.</p>
+                        <p>Refresh Page if you lose your characters or your tiers.</p>
+                    </div>  
+                </div>
                 <div>
                     {
                         this.state.NOT.map((tier, i) => <div className={'tier'} key={i}>
-                            <span>
+                            <div className="span">
                                 {tier}
                                 <span className={'tier__option'}>
                                     <button onClick={() => this.removeHandler(i)}>-</button>
                                     <button onClick={(e) => this.editHandler(e, i)}>paste</button>
                                     <button onClick={() => this.addHandler(i)} value={'ADD_TIER'}>+</button>
                                 </span>
-                            </span>
+                            </div>
                             <div className='tier-list'
                                 id={`${tier}`}
                                 key={tier}
@@ -108,14 +115,15 @@ export class TierList extends React.Component {
                         </div>
                         )
                     }
-                    <div className={'rift'} ></div>
-                    <div className='src-tier-list kontainer'>
+                    <div className={'rift'} onDragOver={(e) => e.preventDefault()} ></div>
+                    <div className='src-tier-list' onDragOver={(e) => e.preventDefault()}>
                         {
                             this.state.KEYS.map(link => {
                                 const XTER = this.state.KAST[link];
                                 return (
                                     <div key={XTER.id}
                                         onDragOver={this.onDragOver}
+                                        className={'image'}
                                     >
                                         <img src={XTER.img} alt={XTER.bioText} id={XTER.link}
                                             draggable={'true'}
@@ -129,12 +137,11 @@ export class TierList extends React.Component {
                     </div>
                     <div>
                         {
-                            addEventListener('', () => {
+                            addEventListener('drop', () => {
                                 console.log('an element was dragged ooo');
                             })
                         }
                     </div>
-                    <div className={'rift'}></div>
                 </div>
             </div>
         );

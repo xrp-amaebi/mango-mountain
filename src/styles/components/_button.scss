@@ -30,7 +30,9 @@
 .button-handle
 {
     box-sizing: border-box;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(12, 12, 34, 0.3), rgba(0, 0, 0, 0.3));
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.3), 
+                    rgba(12, 12, 34, 0.3), 
+                    rgba(0, 0, 0, 0.3));
     border-radius: 6px;
     border-right: 3px solid $off-white;
     display: flex;
@@ -43,7 +45,8 @@
     margin-bottom: $small;
     position: relative;
     top: 0;
-    width: calc(100%); 
+    width: calc(100%);
+    
 }
 
 

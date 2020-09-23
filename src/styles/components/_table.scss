@@ -8,25 +8,26 @@
     margin-bottom: 0.4rem ;
     padding: 0;
     width: auto;
-}
-
-// .content-container .table 
-// {
-//     border-top: 1px solid rgba(235, 235, 235, .3);
-// }
-
-.table .table__row
-{
-    font-family: $Norse;
+    font-family: $Montserrat;
     font-size: $medium;
     letter-spacing: 3px;
     padding: $small;
 }
 
-.table .table__row:hover
+.frame-box .table .table__row
+{
+    font-family: $Norse;
+    font-size: $medium;
+    letter-spacing: 3px;
+    // padding: $small;
+}
+
+.frame-box  .table .table__row:hover
 {
     // background: linear-gradient(to right, rgba(0, 0, 0, 0.75), rgba(8, 21, 29, 0.75), rgba(0, 0, 0, 0.75));
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.3), transparentize($color: $gold, $amount: 0.97), rgba(0, 0, 0, 0.3));
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.3), 
+                        transparentize($color: $gold, $amount: 0.9), 
+                        rgba(0, 0, 0, 0.3));
     padding: $small;
 }
 

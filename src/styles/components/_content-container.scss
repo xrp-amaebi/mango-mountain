@@ -29,13 +29,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .image > img 
 {
-    @media (max-width: $break-point) {
-        position: relative;
-        width: 350px;
-        height: auto;
-    }
+    object-fit: cover;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    // @media (max-width: $break-point) {
+    //     position: relative;
+    //     width: 350px;
+    //     height: auto;
+    // }
 }

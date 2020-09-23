@@ -152,25 +152,28 @@ export class DashBoard extends React.Component {
                             className={'button button__one'}
                         >FINISHERS</button>
                     </span>
+                    <div className="rift"></div>
                     <div className="content-container">
                         <div className={'frame-box dataScroll'}>
                             {
                                 KHARACTER ?
                                    KHARACTER[COMMAND].map((obj, i) => {
                                         return (
-                                            <table className={'table'} key={i}>
-                                                <tbody className={'table__body'}>
-                                                    <tr className={'table__row'}>
-                                                        <td >{obj.INPUT_NAME ? obj.INPUT_NAME : 'N / A'}</td>
-                                                        <td>
-                                                            <button
-                                                                onClick={() => this.showData(obj)}
-                                                            >{displayInputs(obj.INPUT_VALUE ? obj.INPUT_VALUE : 'N / A')}
-                                                            </button>
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
+                                            <div>
+                                                <table className={'table'} key={i}>
+                                                    <tbody className={'table__body'}>
+                                                        <tr className={'table__row'}>
+                                                            <td >{obj.INPUT_NAME ? obj.INPUT_NAME : 'N / A'}</td>
+                                                            <td>
+                                                                <button
+                                                                    onClick={() => this.showData(obj)}
+                                                                >{displayInputs(obj.INPUT_VALUE ? obj.INPUT_VALUE : 'N / A')}
+                                                                </button>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>  
                                         )
                                     })
                                     :

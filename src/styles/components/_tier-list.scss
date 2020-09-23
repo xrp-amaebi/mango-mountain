@@ -6,20 +6,19 @@
     min-height: 86px;
 }
 
-.tier > span
+.tier > .span
 {
     align-items: center;
     background: url('/img/main.png');
     background-repeat: no-repeat;
     background-size: cover;
-    border-bottom: 1px solid gold;
     color: $gold;
     content: '';
     display: flex;
     font-family: $Rune;
     font-size: 4.2rem;
     flex-direction: column;
-    height: 135px;
+    height: 86px;
     line-height: 2;
     justify-content: center;
     margin-right: $small;
@@ -27,7 +26,7 @@
     width: 90px;
 }
 
-.tier > span .tier__option
+.tier > .span .tier__option
 {
     display: flex;
     flex-direction: row;
@@ -35,21 +34,21 @@
     bottom: 0;
 }
 
-.tier > span .tier__option > button
+.tier > .span .tier__option > button
 {
     background: none;
     border: none;
     color: $gold;
     cursor: pointer;
-    font-size: $small;
+    font-size: $font-size-small;
     font-family: $Rune;
     margin: auto;
     transition: .3s ease ;
 }
 
-.tier > span .tier__option > button:hover
+.tier > .span .tier__option > button:hover
 {
-    font-size: $large;
+    font-size: $font-size-large;
 }
 
 .tier-list 
@@ -71,27 +70,27 @@
     flex-direction: row;
     flex-wrap: wrap-reverse;
     justify-content: center;
-    width: calc(100% - 20px);
+    width: calc(100%);
     height: auto;
-    min-height: 86px;
 }
 
 .src-tier-list > div > img 
 {
-    @media (max-width: $break-point) {
-        background-size: cover;
-        position: relative;
-        top: 0;
-        left: $small;
-        width: 65px;
-        height: 87px;
-    }
+    width: 65px;
+    height: 87px;
+
+    // @media (max-width: $break-point) {
+    //     background-size: cover;
+    //     position: relative;
+    //     width: 65px;
+    //     height: 87px;
+    // }
 }
 
 .rift
 {
     display: flex;
-    width: calc(100% - 86px);
+    width: calc(100%);
     height: auto;
     min-height: 100px;
 }
