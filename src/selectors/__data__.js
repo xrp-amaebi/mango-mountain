@@ -176,11 +176,6 @@ export class DashBoard extends React.Component {
                         <a class="prev" onClick={this.plusSlides(-1)}>&#10094;</a>
                         <a class="next" onClick={this.plusSlides(1)}>&#10095;</a>
                     </div>
-                    <div class="dot-contain">
-                        <span class="dot" onclick={this.currentSlide(1)}></span>
-                        <span class="dot" onclick={this.currentSlide(2)}></span>
-                        <span class="dot" onclick={this.currentSlide(3)}></span>
-                    </div>
                     <div className={'button-handle nameTag'}>
                         <button onClick={() => this.onCommand('BASIC_ATTACKS')}
                             className={'button button__one'}
@@ -222,7 +217,7 @@ export class DashBoard extends React.Component {
                         <View  {...this.state} sensor={this.onSensor} />
                     </div>
                     <div className="rift"></div>
-                    <div class="slides-container">
+                    {/* <div class="slides-container">
                         {
                             KAST.map(key => <div class="mySlides fade"> 
                                 <PassPort {...this.props.kharacters[key]} />
@@ -236,7 +231,7 @@ export class DashBoard extends React.Component {
                         <span class="dot" onclick={this.currentSlide(1)}></span>
                         <span class="dot" onclick={this.currentSlide(2)}></span>
                         <span class="dot" onclick={this.currentSlide(3)}></span>
-                    </div>	                        
+                    </div>	                         */}
                     <footer className={'footer'}>
                         <Kontroller />
                         <form id="select-kharacter">
