@@ -122,9 +122,37 @@ export class DashBoard extends React.Component {
             return this.setState({
                 KHARACTER
             });
-        }
-        
+        };
     };
+
+    plusSlides(n){
+        // let slideIndex = 1;
+        // this.showSlides(slideIndex += n);
+    }
+ 
+    currentSlide(n){
+        // this.showSlides(slideIndex = n);
+    }  
+
+    showSlides(n) {
+        // const slides = document.getElementsByClassName("mySlides");
+        // const dots = document.getElementsByClassName("dot");
+        // let slideIndex = 1;
+        // if (n > slides.length) { 
+        //     slideIndex = 1 
+        // }
+        // if (n < 1) { 
+        //     slideIndex = slides.length 
+        // }
+        // for (let i = 0; i < slides.length; i++) {
+        //     slides[i].style.display = "none";
+        // }
+        // for (let i = 0; i < dots.length; i++) {
+        //     dots[i].className = dots[i].className.replace(" active", "");
+        // }
+        // slides[slideIndex - 1].style.display = "block";
+        // dots[slideIndex - 1].className += " active";
+    }
 
    
     render() {
@@ -145,6 +173,13 @@ export class DashBoard extends React.Component {
                     </div>
                     <div className={'image'}>
                         <img src={`${KHARACTER.fullImg ? KHARACTER.fullImg : null}`}  width='760'/>
+                        <a class="prev" onClick={this.plusSlides(-1)}>&#10094;</a>
+                        <a class="next" onClick={this.plusSlides(1)}>&#10095;</a>
+                    </div>
+                    <div class="dot-contain">
+                        <span class="dot" onclick={this.currentSlide(1)}></span>
+                        <span class="dot" onclick={this.currentSlide(2)}></span>
+                        <span class="dot" onclick={this.currentSlide(3)}></span>
                     </div>
                     <div className={'button-handle nameTag'}>
                         <button onClick={() => this.onCommand('BASIC_ATTACKS')}
@@ -187,12 +222,21 @@ export class DashBoard extends React.Component {
                         <View  {...this.state} sensor={this.onSensor} />
                     </div>
                     <div className="rift"></div>
-                    {/* {
-                        KAST.map(key => <button className={'button--link'} onClick={() => this.onPress(key)}>	                           
-                            <PassPort {...this.props.kharacters[key]} />	                                
-                        </button>	                          
-                        )	                           
-                    }	                         */}
+                    <div class="slides-container">
+                        {
+                            KAST.map(key => <div class="mySlides fade"> 
+                                <PassPort {...this.props.kharacters[key]} />
+                            </div>
+                            )
+                        }
+                        <a class="prev" onClick={this.plusSlides(-1)}>&#10094;</a>
+                        <a class="next" onClick={this.plusSlides(1)}>&#10095;</a>
+                    </div>
+                    <div class="dot-contain">
+                        <span class="dot" onclick={this.currentSlide(1)}></span>
+                        <span class="dot" onclick={this.currentSlide(2)}></span>
+                        <span class="dot" onclick={this.currentSlide(3)}></span>
+                    </div>	                        
                     <footer className={'footer'}>
                         <Kontroller />
                         <form id="select-kharacter">

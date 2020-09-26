@@ -122,11 +122,11 @@ export class TierList extends React.Component {
                 <div>
                     {
                         this.state.NOT.map((tier, i) => <div className={'tier'} key={i}>
-                            <div className="span">
+                            <div className="span" id={`main-span${i}}`}>
                                 {tier}
                                 <div className={'tier__option'}>
                                     <button onClick={() => this.removeHandler(i)}>-</button>
-                                    <button onClick={(e) => this.editHandler(e, i)}>paste</button>
+                                    <button onClick={this.onButton}>pen</button>
                                     <button onClick={() => this.addHandler(i)} value={'ADD_TIER'}>+</button>
                                 </div>
                             </div>
