@@ -1,50 +1,12 @@
 .table
 {   
-    border-bottom: 1px solid rgba(235, 235, 235, .03);
-    border-right: 1px solid rgba(235, 235, 235, .03);
-    border-left: 1px solid rgba(235, 235, 235, .03);
-    border-top: 1px solid rgba(235, 235, 235, .03);
+    border: 1px solid rgba(235, 235, 235, .03);
     height: auto;
-    margin-bottom: 0.4rem ;
+    margin-bottom: 1.4rem ;
     padding: 0;
-    width: auto;
-    font-family: $Montserrat;
-    font-size: $medium;
-    letter-spacing: 3px;
-    padding: $small;
-}
-
-.frame-box .table .table__row
-{
+    width: 100%;
     font-family: $Norse;
-    font-size: $medium;
-    letter-spacing: 3px;
-    // padding: $small;
-}
-
-.frame-box  .table .table__row:hover
-{
-    // background: linear-gradient(to right, rgba(0, 0, 0, 0.75), rgba(8, 21, 29, 0.75), rgba(0, 0, 0, 0.75));
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.3), 
-                        transparentize($color: $gold, $amount: 0.9), 
-                        rgba(0, 0, 0, 0.3));
-    padding: $small;
-}
-
-.table .table__row > td:nth-child(1)
-{
-    color: $gold;
-    width: 500px;
-}
-
-.table .table__row > td >  button
-{
-    background: none;
-    border: none;
-    color: $gold;
-}
-
-.table .table__row > td > button:active
-{
-    border: 4px solid transparentize($color: $gold, $amount: 0.1);
+    font-size: $font-size-small;
+    letter-spacing: 4px;
+    padding: 0;
 }

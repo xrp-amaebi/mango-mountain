@@ -7,67 +7,9 @@
 
 .frame-box 
 {
-    border: 2px solid $blue;
     background: transparent;
-    border-radius: 10px;
-    box-sizing: border-box;
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100vh;
-    position: relative;
-    width: 40vw;
     overflow: hidden;
-    margin: 12px;
-    padding: 12px 0;
-
-    @media (max-width: $break-point)
-    {
-        width: calc(100%);
-        height: 60vh;
-        margin-right: 0.1rem;
-    }
-}
-
-.frame-box__header 
-{
-    align-items: center;
-    box-sizing: border-box;
-    // background: transparentize($color: $gold, $amount: 0.9);
-    background: none;
-    border-radius: 6px;
-    border-left: 3px solid $off-white;
-    color: gold;
-    font-family: $Rune;
-    font-size: $font-size-large;
-    letter-spacing: 6px;
-    padding: $small;
-    text-align: center;
-}
-
-.frame-box .order 
-{
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    flex-grow: 0;
-    text-align: center;
-    overflow-wrap: normal;
-    width: auto;
-    margin-bottom: $medium;
-    // position: fixed;
-    // bottom: 0;
-}
-
-.frame-box h3
-{
-    align-self: center;
-    color: $gold;
-    justify-self: center;
-    letter-spacing: 3px;
-    text-align: center;
 }
 
 .frame-box > div > div
@@ -91,7 +33,6 @@
     background-repeat: none;
     font-family: $Norse;
     font-size: $medium;
-    height: inherit;
     letter-spacing: 2px;
     opacity: .89;
     text-align: center;
@@ -107,31 +48,4 @@
 .frame-box > div > div > code
 {
     font-family: $Montserrat;
-}
-
-.view
-{
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    height: 60vh;
-    justify-content: center;
-    margin: $small;
-    width: 50%;
-}
-
-.view__special
-{
-    height: auto;
-    width: auto;
-}
-
-.view > div
-{
-    display: flex;
-    flex-direction: row;
-    height: auto;
-    padding: none;
-    width: auto;
-    line-height: 1.6;
 }

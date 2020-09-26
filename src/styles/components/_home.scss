@@ -16,35 +16,46 @@
 .services > div
 {
     position: relative;
-    object-fit: cover;
-    height: 140px;
+    height: 150px;
     width: calc(80%);
     border-radius: 4px;
     background-size: auto;
     margin-bottom: $large;
 }
 
+.services__container .overlay
+{
+    position: absolute;
+    background: rgba(0, 0, 0, .91);
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .75s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.services__container:hover .overlay
+{
+    opacity: 1;
+}
+
+.overlay .text
+{
+    color: $off-white;
+    font-family: $Abel;
+    text-align: center;
+    font-weight: 600;
+    font-size: $font-size-large;
+    letter-spacing: 6px;
+}
+
 .services > div > img
 {
     position: relative;
-    height: 150px;
-    width: 100%;
     border-radius: 4px;
-}
-
-.vision 
-{
-    background: rgba(0, 0, 0, 0.5);
-    border-radius: 5px;
-    font-family: $Abel;
-    letter-spacing: 1px;
-    margin-bottom: $large;
-    padding: $small;
-}
-.vision > h2
-{
-    font-family: $Livvic;
-    font-size: $large;
-    letter-spacing: 10px;
-    text-align: center;
+    height: 150px;
+    width: 100%; 
 }

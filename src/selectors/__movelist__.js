@@ -11,6 +11,7 @@ import Amplify from '../components/Buttons/AmplifyButton';
 import Block from '../components/Buttons/BlockButton';
 import Stance from '../components/Buttons/StanceButton';
 import Throw from '../components/Buttons/ThrowButton';
+import DownRight from '../components/Buttons/DownRightButton';
 
 export const displayInputs = (input) => (
     <div className={'view view__special'}>
@@ -54,11 +55,14 @@ export const displayInputs = (input) => (
                         case 't':
                             return <Throw key={i} />;
 
+                        case 'z':
+                            return <DownRight key={i} />;
+
                         case '+':
-                            return <div key={item} ><code> + </code></div>;
+                            return <div key={item} ><code>+</code></div>;
 
                         case ',':
-                            return <div key={item}><code> , </code></div>;
+                            return <div key={item}><code>,</code></div>;
 
                         default:
                             return <div key={item}></div>

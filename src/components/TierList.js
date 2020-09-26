@@ -81,6 +81,31 @@ export class TierList extends React.Component {
         console.log(this.props.not, 'remove');
     };
 
+    onButton(e) {
+        e.target.style.display = 'none';
+
+        const input = document.getElementById('main-input');
+        const button = document.getElementById('main-button');
+
+        input.style.display = 'block';
+        button.style.display = 'block';
+
+        console.log('finished');
+        console.log(e.target);
+    };
+
+    onInputButton(e) {
+        const input = document.getElementById('main-input');
+        const content = input.value;
+
+        const mainSpan = document.getElementById('main-span');
+        mainSpan.innerText = content;
+
+        e.target.style.display = 'none';
+        input.style.display = 'none';
+        mainSpan.style.display = 'block';
+    };
+
 
     render() {
         return (
@@ -99,11 +124,11 @@ export class TierList extends React.Component {
                         this.state.NOT.map((tier, i) => <div className={'tier'} key={i}>
                             <div className="span">
                                 {tier}
-                                <span className={'tier__option'}>
+                                <div className={'tier__option'}>
                                     <button onClick={() => this.removeHandler(i)}>-</button>
                                     <button onClick={(e) => this.editHandler(e, i)}>paste</button>
                                     <button onClick={() => this.addHandler(i)} value={'ADD_TIER'}>+</button>
-                                </span>
+                                </div>
                             </div>
                             <div className='tier-list'
                                 id={`${tier}`}
@@ -142,6 +167,16 @@ export class TierList extends React.Component {
                             })
                         }
                     </div>
+                    <div>
+                        <input type="text" id="main-input" />
+
+                        <button id="main-button" onClick={this.onInputButton}>submit</button>
+
+                        <span id="main-span" onClick={this.onButton}>A</span>
+                    </div>
+                    <div>
+                    </div>
+
                 </div>
             </div>
         );

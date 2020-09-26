@@ -1,19 +1,9 @@
-.content-shift {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-
-    @media (max-width: $break-point) {
-        flex-direction: column;
-    }
-}
-
 .content-container
 {
    display: grid;
    grid-template-columns: repeat(2, 1fr);
-   grid-template-rows: 200px 200px;
-   grid-gap: 5px;
+   grid-template-rows: auto;
+   grid-gap: 2px;
 
    @media (max-width: $break-point) {
        display: grid;
@@ -29,7 +19,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .image > img 
@@ -38,9 +27,4 @@
     width: auto;
     height: auto;
     max-width: 100%;
-    // @media (max-width: $break-point) {
-    //     position: relative;
-    //     width: 350px;
-    //     height: auto;
-    // }
 }

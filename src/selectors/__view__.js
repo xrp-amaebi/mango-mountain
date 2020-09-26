@@ -19,8 +19,7 @@ export const View = ({
     SENSOR
 }) => (
     <div className={'frame-box order'} >
-        {/* <h5 className={'frame-box__header '}>MOVE DATA</h5>  */}
-        <div className={''}>
+        <div>
             <div>
                 <code>SENSOR</code>
                 <span id="sensor" className="indicator">
@@ -50,17 +49,15 @@ export const View = ({
             <div>
                 <code>DESCRIPTION</code>
                 <span>
-                    {DESCRIPTION.map((text, i) => <li>{text}</li>)} 
+                    {DESCRIPTION.map((text, i) => <li key={i} >{text}</li>)} 
                 </span>
             </div>
             <div>
                 <code>PROPERTIES</code>
-                <span>{PROPERTIES.map((text, i) => <li>{text}</li>)}</span>
+                    <span>{PROPERTIES.map((text, i) => <li key={i} >{text}</li>)}</span>
             </div>
         </div>
-
-        {/* <h5 className={'frame-box__header '}>FRAME DATA</h5> */}
-        <div className={''}>
+        <div>
             <div>
                 <code>STARTUP</code>
                 <span>{STARTUP}</span>

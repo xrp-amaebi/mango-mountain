@@ -5,7 +5,7 @@
     padding: $small 0;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 200px 200px;
+    grid-template-rows: auto;
     grid-gap: 5px;
 
     @media (max-width: $break-point)
@@ -22,4 +22,22 @@
 #universal__title
 {
     font-size: $font-size-small;
+}
+
+#main-input, #main-button
+{
+    // visibility: hidden;
+    display: none;
+    cursor: pointer;
+}
+
+#main-input::placeholder
+{
+    color: green;
+    text-transform: uppercase;
+}
+
+#main-span
+{
+    cursor: pointer;
 }

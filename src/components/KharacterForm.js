@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { history } from '../routers/Router';
-import { selectController } from '../actions/platform';
+import { selectKharacter } from '../actions/platform';
 
 
 export class KharacterForm extends React.Component {
@@ -10,15 +10,21 @@ export class KharacterForm extends React.Component {
     };
 
     onChange = (e) => {
-        const kharacter = e.target.value;
-        history.push(`/${kharacter}`);
-        window.location.reload(true);
+        e.persist();
+        const KHARACTER = e.target.value;
+        history.push(`/${KHARACTER}`);
+        if (KHARACTER) {
+            this.props.selectKharacter({ KHARACTER });
+            window.location.reload(true);
+        };
+        console.log('finished');
+        console.log(this.props.KHARACTER);
     };
 
     render() {
         return (
             <div>
-                <form id="select-platform">
+                <form id="select-kharacter">
                     <select
                         name="platform"
                         onChange={this.onChange}
@@ -61,8 +67,7 @@ export class KharacterForm extends React.Component {
                         <option value="terminator">Terminator</option>                      
                     </select>
                 </form>
-            </div>
-            
+            </div>  
         );
     };
 };
@@ -72,7 +77,7 @@ const mapStateToProps = (state) => ({
 });
 
 const mapDispatchToProps = (dispatch) => ({
-    selectController: (state) => dispatch(selectController(state))
+    selectKharacter: (state) => dispatch(selectKharacter(state)),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(KharacterForm);

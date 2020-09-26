@@ -14,7 +14,7 @@
     line-height: 2;
     padding: 0.5rem;
     text-decoration: none;
-    transition: .3s animate ease-in-out ;
+    transition: .4s animate ease-in-out ;
 }
 
 .button > option
@@ -46,9 +46,9 @@
     position: relative;
     top: 0;
     width: calc(100%);
+    cursor: default;
     
 }
-
 
 .button__one
 {
@@ -60,7 +60,6 @@
     font-family: $Rune;
     font-size: $medium;
     letter-spacing: 2px;
-
 }
 
 .button--link
@@ -78,3 +77,23 @@
         margin-right: 0.1rem;
     }
 }   
+
+
+//INPUT BUTTONS
+.ps4
+{
+    width: 23px;
+    height: 23px;
+}
+
+.xb1
+{
+    width: 23px;
+    height: 23px;
+}
+
+.universals
+{
+    width: 23px;
+    height: 23px;
+}

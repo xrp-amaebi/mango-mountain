@@ -10,32 +10,31 @@ export const HomePage = (props) => {
                 <Header />
                 <div className="rift"></div>
                 <div className={'services'}>
-                    <div className="image">
-                        <img src="img/lol.jpg" alt="FIrewood" />
+                    <div className="services__container image">
+                        <img src="img/carousel/4.jpg" alt="FIrewood" />
+                        <div className="overlay">
+                            <div className={'text'}>BRACKET GENERATOR</div>
+                        </div>
                     </div>
-                    <div className="image">
-                        <img src="img/sfv.png" alt="FIrewood" />
+                    <div className="services__container image">
+                        <img src="img/carousel/3.jpg" alt="FIrewood" />
+                        <div className="overlay">
+                            <div className={'text'}>COACHELLA</div>
+                        </div>
                     </div>
-                    <div className="image">
-                        <img src="img/lol.jpg" alt="FIrewood" />
+                    <div className="services__container image">
+                        <img src="img/carousel/2.jpg" alt="FIrewood" />
+                        <div className="overlay">
+                            <div className={'text'}>COMMENTARY</div>
+                        </div>
                     </div>
-                    <div className="image">
-                        <img src="img/sfv.png" alt="FIrewood" />
+                    <div className="services__container image">
+                        <img src="img/carousel/9.jpg" alt="FIrewood" />
+                        <div className="overlay">
+                            <div className={'text'}>STREAMING</div>
+                        </div>
                     </div>
                 </div>
-                {/* <div className={'services image'}>
-                    <caption>COACHELLA</caption>
-                    <img src="img/carousel/1.jpg" alt="FIrewood"/>
-                </div> */}
-                {/* <div className={'services image'}>
-                    <caption>WORLD CLASS COMMENTARY</caption>
-                    <img src="img/carousel/5.jpg" alt="FIrewood"/>
-                </div>
-                <div className={'services image'}>
-                    <caption>STREAMING SOLUTIONS</caption>
-                    <img src="img/carousel/9.jpg" alt="FIrewood"/>
-                </div>
-                */}
             </div>
         </div>
     )

@@ -1,7 +1,11 @@
-
 export const selectController = ({ platform } = {}) => ({
     type: 'SELECT_CONTROLLER',
     platform
+});
+
+export const selectKharacter = ({ KHARACTER } = {}) => ({
+    type: 'SELECT_KHARACTER',
+    KHARACTER
 });
 
 export const addTier = ({ index }) => ({

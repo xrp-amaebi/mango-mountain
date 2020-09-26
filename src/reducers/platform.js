@@ -4,7 +4,8 @@ import kharacters from '../fixtures/characterArray';
 const platformDefaultState = {
     platform: 'default',
     not: ['Z', 'S+', 'S', 'A'],
-    kharacters
+    KHARACTER: '' || 'cassie',
+    kharacters,   
 };
 
 export default (state = platformDefaultState, action) => {
@@ -13,6 +14,12 @@ export default (state = platformDefaultState, action) => {
             return {
                 ...state,
                 platform: action.platform
+            };
+
+        case "SELECT_KHARACTER":
+            return {
+                ...state,
+                KHARACTER: action.KHARACTER
             };
    
         case "ADD_TIER":

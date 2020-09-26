@@ -47,10 +47,15 @@ export const Tournament = (props) => {
 
     return (
         <div>
-            { "Tournament" }
+            <svg width="765" height="216">
+                <g className="parent">
+                    <g></g>
+                    <g></g>
+                    <g></g>
+                </g>
+            </svg>
         </div>
     );
-
 };
 
 const mapStateToProps = (state) => ({

@@ -6,9 +6,9 @@ import { selectController } from '../actions/platform';
 export class SelectForm extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {
-            ...this.props.platform
-        };
+        // this.state = {
+        //     ...this.props.platform
+        // };
     };
     
     onChange = (e) => {
@@ -38,7 +38,7 @@ export class SelectForm extends React.Component {
 };
 
 const mapStateToProps = (state) => ({
-    ...state
+    ...state.platform
 });
 
 const mapDispatchToProps = (dispatch) => ({
