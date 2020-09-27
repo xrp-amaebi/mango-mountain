@@ -59,3 +59,138 @@
     height: 150px;
     width: 100%; 
 }
+
+.footer-home
+{
+    background: #1a1e29;
+    border-top: 1px solid $cream;
+    min-height: 40vh;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 5px;
+
+    @media (max-width: $break-point) {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
+        grid-gap: 5px;
+        // flex-wrap: wrap;
+    }
+
+}
+
+.logo
+{
+    margin: 1.2rem;
+}
+
+.copyright
+{
+    color: $off-white;
+    font-family: $Abel;
+    cursor: pointer;
+}
+
+.bold
+{
+    font-family: $Montserrat;
+    color: $cream;
+    font-size: 40px;
+    cursor: pointer;
+    letter-spacing: 10px;
+}
+
+.thin
+{
+    font-family: $Metrophobic;
+    color: $off-white;
+    font-size: 22px;
+    letter-spacing: 10px;
+    cursor: pointer;
+}
+
+.explore 
+{
+    list-style-type: none;
+    font-family: $Metrophobic;
+    margin: 2.0rem;
+    font-size: 12px;
+    color: #5f5f5f;
+    cursor: pointer;
+}
+
+.explore > div 
+{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: $font-size-large;
+    font-weight: 500;
+    color: $off-white;
+    letter-spacing: 2px;
+}
+
+.explore li
+{
+    margin-top: 2.0rem;
+    transition: .5s ease;
+    cursor: pointer;
+}
+
+.explore li:hover
+{
+    color: $off-white;
+}
+
+.mission
+{
+    background: #1a1e29;
+    background: $dark-blue;
+    background: #777;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    border-top: 1px solid $cream;
+    margin: 0;
+}
+
+.mission > div
+{
+    margin-top: 2.0rem;
+}
+
+.state
+{
+    font-family: $Montserrat;
+    font-size: 25px;
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+    padding: $small;
+    color: $dark-blue;
+}
+
+.sign
+{
+    font-family: $Montserrat;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    width: 300px;
+    height: 50px;
+    background: $dark-blue;
+    padding: $small;
+    color: $off-white;
+    border-radius: 4px;
+    transition: .5s ease;
+}
+
+.sign:hover
+{
+    background: none;
+    border: 3px solid $off-white;
+    color: $dark-blue;
+}

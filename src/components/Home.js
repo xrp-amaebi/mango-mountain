@@ -5,7 +5,6 @@ import { Welcome } from './Welcome';
 export const HomePage = (props) => {
     return(
         <div>
-            {/* {className = { 'content-container'} */}
             <div className={''}> 
                 <Header />
                 <div className="rift"></div>
@@ -36,6 +35,54 @@ export const HomePage = (props) => {
                     </div>
                 </div>
             </div>
+            <div className='mission'>
+                <div>
+                    <h2 className='state'>We want to Provide the Right Tools for YOU and <br/> your COMMUNITY</h2>
+                </div>
+                <div className='content__write'>
+                    <div>
+                        <p>
+                            We aim to keep things simple, with plenty more to explore.
+                        </p>
+                        <p>Try our bracket generator, and customizations for your Open tournament.</p>
+                    </div>
+                </div>
+                <div>
+                    <a href="#" className='sign'>Sign Up</a>
+                </div>
+            </div>
+            <footer className="footer-home">
+                <div className='logo'>
+                    <div>
+                        <div className="bold">MANGO</div>
+                        <div className='thin'>MOUNTAIN</div>     
+                    </div>
+                    <div className='copyright'>
+                        <p>&copy; 2020 Firewood Esports Nigeria.</p>
+                    </div>
+                </div>
+                <div className="explore">
+                    <div>EXPLORE</div> 
+                    <li>Tournament Generator</li>
+                    <li>Commentary</li>
+                    <li>Live Streaming</li>
+                    <li>Coaching</li>
+                </div>  
+                <div className="explore">
+                    <div>RESOURCES</div> 
+                    <li>Knowledge Base</li>
+                    <li>Terms</li>
+                    <li>Privacy</li>
+                    <li>Content</li>
+                </div>  
+                <div className="explore">
+                    <div>CONTACT</div> 
+                    <li>Advertise</li>
+                    <li>Blog</li>
+                    <li>Social Media</li>
+                    <li>Telepone</li>
+                </div>  
+            </footer>
         </div>
     )
 };
