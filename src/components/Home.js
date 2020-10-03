@@ -101,7 +101,7 @@ export const HomePage = (props) => {
                     <li>Social Media</li>
                     <li>Telepone</li>
                 </div>
-                <Tournament />
+                {/* <Tournament /> */}
                 <div className="footer">
                     <Kontroller />
                 </div>  

@@ -119,7 +119,7 @@ export class TierList extends React.Component {
                 <div>
                     {
                         this.state.NOT.map((tier, i) => <div className={'tier'} key={i}>
-                            <div>
+                            <div> 
                                 <input type="text" id="main-input" value='submit'/>
 
                                 <button id="main-button" onClick={this.onInputButton}>submit</button>

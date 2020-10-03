@@ -7,7 +7,7 @@
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),
                     rgba(0, 0, 0, 0.5)),
                     url("/img/bg1.jpg");
-    background: transparentize($color: #ebebeb, $amount: 0.9); 
+    // background: transparentize($color: #ebebeb, $amount: 0.9); 
     background-repeat: no-repeat;
     background-size: cover;
 }
