@@ -63,7 +63,6 @@ export class TierList extends React.Component {
         this.state.NOT.splice(index + 1, 0, '' );
         this.setState({ NOT: this.state.NOT });
         this.render();
-        console.log(this.state.NOT, "add");
     };
 
     editHandler({ target }, index) {
@@ -78,28 +77,25 @@ export class TierList extends React.Component {
         this.state.NOT.splice(index, 1)
         this.setState({ NOT: this.state.NOT });
         this.render();
-        console.log(this.props.not, 'remove');
     };
 
     onButton(e) {
-        e.target.style.display = 'none';
+        const object = document.getElementById(e);
+        object.style.visibility = 'hidden';
+        // e.target.style.display = 'none';
 
         const input = document.getElementById('main-input');
         const button = document.getElementById('main-button');
 
         input.style.display = 'block';
         button.style.display = 'block';
-
-        console.log('finished');
-        console.log(e.target);
     };
 
     onInputButton(e) {
         const input = document.getElementById('main-input');
-        const content = input.value;
 
         const mainSpan = document.getElementById('main-span');
-        mainSpan.innerText = content;
+        mainSpan.innerText = input.value;
 
         e.target.style.display = 'none';
         input.style.display = 'none';
@@ -117,17 +113,23 @@ export class TierList extends React.Component {
                         <p>Create your own tier list by dragging characters to the list below.</p>
                         <p>To add, edit or remove a tier, click on their respective buttons on the left of the tiers.</p>
                         <p>Refresh Page if you lose your characters or your tiers.</p>
-                    </div>  
+                    </div> 
                 </div>
+                <div className="rift"></div>
                 <div>
                     {
                         this.state.NOT.map((tier, i) => <div className={'tier'} key={i}>
-                            <div className="span" id={`main-span${i}}`}>
+                            <div>
+                                <input type="text" id="main-input" value='submit'/>
+
+                                <button id="main-button" onClick={this.onInputButton}>submit</button>
+                            </div>
+                            <div className="span" id={i}>
                                 {tier}
                                 <div className={'tier__option'}>
-                                    <button onClick={() => this.removeHandler(i)}>-</button>
-                                    <button onClick={this.onButton}>pen</button>
-                                    <button onClick={() => this.addHandler(i)} value={'ADD_TIER'}>+</button>
+                                    <button onClick={() => this.removeHandler(i)}><i className="material-icons">remove</i></button>
+                                    <button onClick={() => this.onButton(i)}><i className="material-icons">mode_edit</i></button>
+                                    <button onClick={() => this.addHandler(i)} value={'ADD_TIER'}><i className="material-icons">add</i></button>
                                 </div>
                             </div>
                             <div className='tier-list'
@@ -150,7 +152,8 @@ export class TierList extends React.Component {
                                         onDragOver={this.onDragOver}
                                         className={'image'}
                                     >
-                                        <img src={XTER.img} alt={XTER.bioText} id={XTER.link}
+                                        <img 
+                                            src={XTER.img} alt={XTER.bioText} id={XTER.link}
                                             draggable={'true'}
                                             onDragOver={(e) => e.preventDefault()}
                                             onDragStart={this.onDragStart}
@@ -167,16 +170,6 @@ export class TierList extends React.Component {
                             })
                         }
                     </div>
-                    <div>
-                        <input type="text" id="main-input" />
-
-                        <button id="main-button" onClick={this.onInputButton}>submit</button>
-
-                        <span id="main-span" onClick={this.onButton}>A</span>
-                    </div>
-                    <div>
-                    </div>
-
                 </div>
             </div>
         );

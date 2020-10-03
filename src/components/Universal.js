@@ -141,8 +141,8 @@ export const Universal = () => (
                 </table>
             </div>
         </div>
-        {/* <div>
-            /* <h2>ATTACKS AND HOW TO DEFEND THEM </h2>
+        <div>
+        <h2>ATTACKS AND HOW TO DEFEND THEM </h2>
             <p>
                 In this game and most fighting games there are multiple types of attack, here I will be showing you their types and how to best defend against them.
             </p>
@@ -203,7 +203,7 @@ export const Universal = () => (
             <p>
                 This means that
                 </p>
-        </div> */}
+        </div>
         <div className="footer">
             <Kontroller />
         </div>

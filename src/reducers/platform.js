@@ -4,7 +4,7 @@ import kharacters from '../fixtures/characterArray';
 const platformDefaultState = {
     platform: 'default',
     not: ['Z', 'S+', 'S', 'A'],
-    KHARACTER: '' || 'cassie',
+    KHARACTER: 'scorpion',
     kharacters,   
 };
 

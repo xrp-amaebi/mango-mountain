@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { history } from '../routers/Router';
+import { selectKharacter } from '../actions/platform';
 import { PassPort } from '../components/KharacterDashBoard';
 import { displayInputs } from '../selectors/__movelist__';
 import { Header } from '../components/Header';
 import { View } from './__view__';
 import { NotFound } from '../components/NotFound';
 import Kontroller from '../components/SelectForm';
-
+import {Display} from '../selectors/__display__';
+import { Video } from '../selectors/__video__';
 
 export class DashBoard extends React.Component {
     constructor(props) {
@@ -119,16 +121,49 @@ export class DashBoard extends React.Component {
         const KHARACTER = this.props.kharacters[e.target.value];
         if(KHARACTER) {
             history.push(`/${link}`);
+            this.props.selectKharacter({ KHARACTER: link });
             return this.setState({
                 KHARACTER
             });
         };
     };
 
-    plusSlides(n){
-        // let slideIndex = 1;
-        // this.showSlides(slideIndex += n);
+    plusSlides = () => {
+        let index = this.state.KAST.findIndex(key => {
+            if (key === this.props.KHARACTER) {
+                return key;
+            }
+        });
+
+        if (index < this.state.KAST.length - 1 ) {
+            const kharacter = this.state.KAST[index += 1];
+            history.push(`/${kharacter}`);
+
+            this.props.selectKharacter({ KHARACTER: kharacter });
+            return this.setState({
+                KHARACTER: this.props.kharacters[kharacter]
+            });
+        }
     }
+
+    minusSlides = () => {
+        let index = this.state.KAST.findIndex(key => {
+            if (key === this.props.KHARACTER) {
+                return key;
+            };
+        });
+
+        if (index >= 1){
+            const kharacter = this.state.KAST[index -= 1];
+            history.push(`/${kharacter}`);
+            this.props.selectKharacter({ KHARACTER: kharacter });
+            return this.setState({
+                KHARACTER: this.props.kharacters[kharacter]
+            });
+        };
+    };   
+
+        
  
     currentSlide(n){
         // this.showSlides(slideIndex = n);
@@ -156,6 +191,7 @@ export class DashBoard extends React.Component {
 
    
     render() {
+        history.push(`/${this.props.KHARACTER}`);
         const { 
             isValid,
             KHARACTER,
@@ -173,8 +209,8 @@ export class DashBoard extends React.Component {
                     </div>
                     <div className={'image'}>
                         <img src={`${KHARACTER.fullImg ? KHARACTER.fullImg : null}`}  width='760'/>
-                        <a class="prev" onClick={this.plusSlides(-1)}>&#10094;</a>
-                        <a class="next" onClick={this.plusSlides(1)}>&#10095;</a>
+                        <a className="prev" onClick={this.minusSlides}>&#10094;</a>
+                        <a className="next" onClick={this.plusSlides}>&#10095;</a>
                     </div>
                     <div className={'button-handle nameTag'}>
                         <button onClick={() => this.onCommand('BASIC_ATTACKS')}
@@ -207,7 +243,6 @@ export class DashBoard extends React.Component {
                                                     </button>
                                                 </div>
                                             </div>
-                                            
                                         )
                                     })
                                     :
@@ -231,7 +266,7 @@ export class DashBoard extends React.Component {
                         <span class="dot" onclick={this.currentSlide(1)}></span>
                         <span class="dot" onclick={this.currentSlide(2)}></span>
                         <span class="dot" onclick={this.currentSlide(3)}></span>
-                    </div>	                         */}
+                    </div>*/}
                     <footer className={'footer'}>
                         <Kontroller />
                         <form id="select-kharacter">
@@ -292,4 +327,8 @@ export class DashBoard extends React.Component {
 
 const mapStateToProps = (state) => ({ ...state.platform });
 
-export default connect(mapStateToProps, undefined)(DashBoard);
+const mapDispatchToProps = (dispatch) => ({
+    selectKharacter: (state) => dispatch(selectKharacter(state)),
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(DashBoard);
