@@ -17,10 +17,10 @@
     align-items: center;
     display: flex;
     flex-direction: column;
-    font-family: $Montserrat;
     justify-content: space-between;
     align-items: flex-end;
     padding: $small 0;
+
 }
 
 
@@ -29,10 +29,11 @@
 {
     color: $off-white;
     text-decoration: none;
-    transition: .3s ease-in-out;
+    // transition: .3s ease;
     margin: $large;
     font-size: $font-size-large;
-    letter-spacing: 1px;
+    letter-spacing: 5px;
+    font-family: $Rune;
 
     h1 {
         margin: 0;

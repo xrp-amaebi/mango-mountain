@@ -51,9 +51,12 @@ export class KharacterForm extends React.Component {
                         <option value="kotal">Kotal</option>
                         <option value="kunglao">Kunglao</option>
                         <option value="liukang">Liukang</option>
+                        <option value="mileena">Mileena</option>
                         <option value="nightwolf">Nightwolf</option>
                         <option value="noob">Noob</option>
                         <option value="raiden">Raiden</option>
+                        <option value="rain">Rain</option>
+                        <option value="rambo">rambo</option>
                         <option value="robocop">Robocop</option>
                         <option value="scorpion">Scorpion</option>
                         <option value="shang">ShangTsung</option>

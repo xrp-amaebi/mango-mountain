@@ -1,7 +1,6 @@
 import React from 'react';
 import { Header } from './Header';
 import { Welcome } from './Welcome';
-import Kontroller from '../components/SelectForm';
 import { Video } from '../selectors/__video__';
 import { Tournament } from './TournamentPage';
 
@@ -38,8 +37,8 @@ export const HomePage = (props) => {
                             <div className={'text'}>COACHELLA</div>
                         </div>
                     </div>
-                    <div className="services__container image">
-                        <img src="img/carousel/5.jpg" alt="FIrewood" />
+                    <div className="services__container image">288
+                        <img src="img/ns4.png" alt="FIrewood" />
                         <div className="overlay">
                             <div className={'text'}>STREAMING AND COMMENTARY</div>
                         </div>
@@ -56,7 +55,7 @@ export const HomePage = (props) => {
                 <div>
                     <h2 className='state'>We have the Right Tools for YOU and <br/> your COMMUNITY</h2>
                 </div>
-                <div className='content__write'>
+                <div>
                     <div>
                         <p>
                             We aim to keep things simple, with plenty more to explore.
@@ -69,7 +68,7 @@ export const HomePage = (props) => {
                 </div>
             </div>
             <footer className="footer-home">
-                <div>
+                <div className="explore">
                     <div>
                         <div className="bold">MANGO</div>
                         <div className='thin'>MOUNTAIN</div>
@@ -77,7 +76,6 @@ export const HomePage = (props) => {
                     </div>
                     <div className='copyright'>
                         <p>Copyright &copy; 2020 Firewood Inc.<br/> All rights reserved.</p>
-                        <p>Nigeria.</p>
                     </div>
                 </div>
                 <div className="explore">
@@ -102,9 +100,9 @@ export const HomePage = (props) => {
                     <li>Telepone</li>
                 </div>
                 {/* <Tournament /> */}
-                <div className="footer">
+                {/* <div className="footer">
                     <Kontroller />
-                </div>  
+                </div>   */}
             </footer>
         </div>
     )
