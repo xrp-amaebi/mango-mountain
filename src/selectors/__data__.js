@@ -305,7 +305,7 @@ export class DashBoard extends React.Component {
                                 <option value="robocop">Robocop</option>
                                 <option value="scorpion">Scorpion</option>
                                 <option value="shang">ShangTsung</option>
-                                <option value="shao">ShaoKahn</option>
+                                <option value="shaokahn">ShaoKahn</option>
                                 <option value="sheeva">Sheeva</option>
                                 <option value="sindel">Sindel</option>
                                 <option value="skarlet">Skarletl</option>
