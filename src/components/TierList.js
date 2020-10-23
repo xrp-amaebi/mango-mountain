@@ -102,7 +102,6 @@ export class TierList extends React.Component {
         mainSpan.style.display = 'block';
     };
 
-
     render() {
         return (
             <div>
