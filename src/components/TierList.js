@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { Header }from './Header';
+import { Header } from './Header';
 import { addTier, removeTier, editFilter } from '../actions/platform';
 
 
@@ -10,53 +10,12 @@ export class TierList extends React.Component {
         super(props);
         const KAST = this.props.kharacters;
         const KEYS = Object.keys(KAST);
+        
         this.state = {
             NOT: ['S+', 'S', 'A'],
             KAST,
             KEYS
         };
-    };
-    
-    _onDragStart(e) {
-        const _clone = e.target.cloneNode();
-        e.dataTransfer.setData('text', e.target.id);
-    };
-    
-    eventHandler(event) {
-        const _onDragOver = (e) => {
-            e.preventDefault();
-        };
-
-        const _onDrop = (e) => {
-            e.preventDefault();
-            const _package = e.dataTransfer.getData('text');
-            console.log(_package);
-            
-            const _container = document.getElementById('Z');
-            console.log(_container);
-        };
-
-        const _globalDragOver = () => {
-
-        };
-
-        console.log(event.type)
-        switch(event.type) {
-            case 'drop':
-            case 'dragend':
-                _onDrop(event);
-            break;
-
-            case 'dragenter':
-            case 'dragover':
-                _onDragOver(event);
-                // _globalDragOver(event);  
-            break;
-
-            case 'selectstart':
-                event.preventDefault();
-            break;
-        }
     };
 
     addHandler(index) {

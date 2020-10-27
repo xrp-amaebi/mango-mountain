@@ -1,24 +1,8 @@
 import React from 'react';
 import { Header } from './Header';
-import { Welcome } from './Welcome';
-import { Video } from '../selectors/__video__';
-import { Tournament } from './TournamentPage';
+
 
 export const HomePage = (props) => {
-    const drop = { 
-        url: ['/video/1.mp4'],
-        inputs: '11'
-    }
-
-    const liu = {
-        url: ['/video/2.mp4'],
-        inputs: 'f44,bf4ffg,113,u4,ubf1,ubf1,ubf1,f213,fbf4,t'
-    }
-    const mon = {
-        url: [`https://www.youtube.com/embed/LyXWh-oL9vk?playlist=LyXWh-oL9vk&loop=1`],
-        inputs: 'f43,34,db1a,12,bf4'
-    }
-
     return(
         <div className={'services-container'}>
             <div> 
@@ -99,11 +83,7 @@ export const HomePage = (props) => {
                     <li>Social Media</li>
                     <li>Telepone</li>
                 </div>
-                {/* <Tournament /> */}
-                {/* <div className="footer">
-                    <Kontroller />
-                </div>   */}
             </footer>
         </div>
-    )
+    );
 };
