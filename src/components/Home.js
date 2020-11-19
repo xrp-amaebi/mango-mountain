@@ -16,7 +16,7 @@ export const HomePage = (props) => {
                         </div>
                     </div>
                     <div className="services__container image">
-                        <img src="img/carousel/1.jpg" alt="FIrewood" />
+                        <img src="img/tekken.png" alt="FIrewood" />
                         <div className="overlay">
                             <div className={'text'}>COACHELLA</div>
                         </div>
