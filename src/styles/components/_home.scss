@@ -78,7 +78,6 @@
 .footer-home
 {
     background: #1a1e29;
-    border-top: 1px solid $cream;
     min-height: 60vh;
     justify-content: center;
     align-items: center;
@@ -165,8 +164,6 @@
 .mission
 {
     background: #1a1e29;
-    background: $dark-blue;
-    background: #777;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -184,12 +181,18 @@
 .state
 {
     font-family: $Montserrat;
-    font-size: 25px;
+    font-size: 45px;
     margin: 0;
     text-align: center;
     text-transform: uppercase;
     padding: $small;
     color: $dark-blue;
+}
+.mission-text
+{
+    text-transform: uppercase;
+    font-size: $font-size-large;
+    text-align: center;
 }
 
 .sign
@@ -222,8 +225,10 @@
 
 .sign > a:hover
 {
-    background: none;
+    background: $off-white;
     border: 3px solid $off-white;
     color: $dark-blue;
-    font-weight: 400;
+    font-weight: 600;
+    font-size: x-large;
+
 }

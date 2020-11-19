@@ -39,14 +39,14 @@ export const HomePage = (props) => {
                 <div>
                     <h2 className='state'>We have the Right Tools for YOU and <br/> your COMMUNITY</h2>
                 </div>
-                <div>
-                    <div>
-                        <p>
-                            We aim to keep things simple, with plenty more to explore.
-                        </p>
-                        <p>Try the Bracket generator for your Open tournaments with our event-driven, tournament API.</p>   
-                    </div>
+                <div className="mission-text">
+                    <p>
+                        <h3>We aim to keep things simple, with plenty more to explore </h3>
+                        <p><a href="#">Try the Bracket generator for your Open tournaments</a></p>
+                        <p><a href="#">Try our event-driven tournament API</a></p>
+                    </p>  
                 </div>
+                
                 <div className="sign">
                     <a href="#">Sign Up</a>
                 </div>
