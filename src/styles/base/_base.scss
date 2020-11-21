@@ -10,9 +10,6 @@ body
     background: #ebebeb;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("/img/background.png") !important;
-    // background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    // url("https://www.kombatakademy.com/wp-content/uploads/images/Background.png") !important;
-    color: $off-white;
     -webkit-font-smoothing: antialiased;
 }
 
@@ -24,7 +21,6 @@ h1
 
 code
 {
-    // background-color: rgba(27, 31, 35, .05);
     border-radius: 3px;
     color: inherit;
     font-family: SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;

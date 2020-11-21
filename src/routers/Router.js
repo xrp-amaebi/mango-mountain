@@ -5,9 +5,11 @@ import { Universal } from '../components/Universal';
 import DashBoard from '../selectors/__data__';
 import { About } from '../components/About';
 import { NotFound } from '../components/NotFound';
+import { CreateTourney } from '../components/CreateTourney';
 import TierList from '../components/TierList';
 import TournamentPage from '../components/TournamentPage';
 import createHistory from 'history/createBrowserHistory';
+
 
 export const history = createHistory();
 
@@ -18,6 +20,7 @@ export const Router = () => (
                 <Route path="/" component={HomePage} exact={true} />
                 <Route path="/guides" component={Universal}/>
                 <Route path="/tournament" component={TournamentPage}/>
+                <Route path="/create" component={CreateTourney}/>
                 <Route path="/tierlist" component={TierList} />
                 <Route path="/about" component={About}/>
                 <Route path="/:id" component={DashBoard} />

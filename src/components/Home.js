@@ -2,56 +2,88 @@ import React from 'react';
 import { Header } from './Header';
 
 
-export const HomePage = (props) => {
-    return(
-        <div className={'services-container'}>
-            <div> 
-                <div className="rift"></div>
-                <Header />
-                <div className={'services'}>
-                    <div className="services__container image">
-                        <img src="img/sfv.png" alt="FIrewood" />
-                        <div className="overlay">
-                            <div className={'text'}>BRACKET GENERATOR</div>
-                        </div>
-                    </div>
-                    <div className="services__container image">
-                        <img src="img/tekken.png" alt="FIrewood" />
-                        <div className="overlay">
-                            <div className={'text'}>COACHELLA</div>
-                        </div>
-                    </div>
-                    <div className="services__container image">288
-                        <img src="img/ns4.png" alt="FIrewood" />
-                        <div className="overlay">
-                            <div className={'text'}>STREAMING AND COMMENTARY</div>
-                        </div>
-                    </div>
-                    <div className="services__container image">
-                        <img src="img/mk.png" alt="FIrewood"/>
-                        <div className="overlay">
-                            <div className={'text'}>PRACTICE VIDEOS</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div className='mission'>
+export const HomePage = (props) => (
+    <div className={'page'}>
+        {/* <Header /> */}
+        <div className="mango">
                 <div>
-                    <h2 className='state'>We have the Right Tools for YOU and <br/> your COMMUNITY</h2>
+                    <h2>MANGO MOUNTAIN</h2>
+                    <p>Empowering the Esports Community</p>
                 </div>
-                <div className="mission-text">
-                    <p>
-                        <h3>We aim to keep things simple, with plenty more to explore </h3>
-                        <p><a href="#">Try the Bracket generator for your Open tournaments</a></p>
-                        <p><a href="#">Try our event-driven tournament API</a></p>
-                    </p>  
-                </div>
-                
-                <div className="sign">
-                    <a href="#">Sign Up</a>
+                <div>
+                    <a href="/create">Create an Event</a>
+                    <a href="#">Try a simple bracket</a>
                 </div>
             </div>
-            <footer className="footer-home">
+        {/* <div className={'services'}>
+                <div className="services__container image">
+                    <img src="img/sfv.png" alt="FIrewood" />
+                    <div className="overlay">
+                        <div className={'text'}>STREET FIGHTER V</div>
+                    </div><br/>
+                </div>
+                <div class="card">
+                    <p>21 July 2021 - 24th July 2021</p>
+                    <p>Double Eliminaton Brackets</p>
+                    <p>Silver Bird Galleria, Ikoyi Lagos.</p>
+                    <p>Offline</p>
+                </div>
+                <div className="services__container image">
+                    <img src="img/tekken.png" alt="FIrewood" />
+                    <div className="overlay">
+                        <div className={'text'}>TEKKEN 7</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <p>21 July 2021 - 24th July 2021</p>
+                    <p>Double Eliminaton Brackets</p>
+                    <p>Silver Bird Galleria, Ikoyi Lagos.</p>
+                    <p>Offline</p>
+                </div>
+                <div className="services__container image">
+                    <img src="img/ns4.png" alt="FIrewood" />
+                    <div className="overlay">
+                        <div className={'text'}>NARUTO NINJA STORM 4</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <p>21 July 2021 - 24th July 2021</p>
+                    <p>Double Eliminaton Brackets</p>
+                    <p>Silver Bird Galleria, Ikoyi Lagos.</p>
+                    <p>Offline</p>
+                </div>
+                <div className="services__container image">
+                    <img src="img/mk.png" alt="FIrewood"/>
+                    <div className="overlay">
+                        <div className={'text'}>UM11K</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <p>21 July 2021 - 24th July 2021</p>
+                    <p>Double Eliminaton Brackets</p>
+                    <p>Silver Bird Galleria, Ikoyi Lagos.</p>
+                    <p>Offline</p>
+                </div>
+            </div> */}
+        <div className='mission'>
+            <div>
+                <h2>JOIN OUR COMMUNITY</h2>
+                <div className="mission-text">
+                    <h3>We aim to keep things simple for your team, with plenty more to explore </h3>
+                </div>  
+            </div>
+            <div className="community image">
+                <img src="img/community.png" alt="community" />
+            </div> 
+            <div className="try">
+                <a href="/create">Try the Simple Bracket generator for singles </a>
+                <a href="/create">Try our event-driven API for Open tournaments</a> 
+            </div>
+            <div className="sign">
+                <a href="#">Sign Up</a>
+            </div>
+        </div>
+        <footer className="footer-home">
                 <div className="explore">
                     <div>
                         <div className="bold">MANGO</div>
@@ -84,6 +116,6 @@ export const HomePage = (props) => {
                     <li>Telepone</li>
                 </div>
             </footer>
-        </div>
-    );
-};
+    </div>
+);
+

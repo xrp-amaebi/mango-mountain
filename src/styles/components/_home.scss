@@ -1,41 +1,73 @@
-.services-container
+.page
 {
-    background: #ebebeb;
-    min-height: 100vh;
-    margin: 0;
+    width: 100%;
+    background: $off-white;
+    font-family: $Montserrat;
+}
+
+.mango
+{
+    background: $off-white;
+    width: 100%;
+    letter-spacing: 1px;
+}
+
+.mango > div
+{
+    align-items: center;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    margin: $small;
+    height: 150px;
+    border: .3px solid rgb(228, 222, 222);
+    justify-content: center;
+}
+
+.mango a
+{
+    display: inline-block;
+    background: none;
+    border: 1px solid #5f5f5f; 
+    color: $cream;
+    cursor: pointer;
+    padding: $small;
+    background: none;
+    margin: $small;
+    border-radius: 1px;
+    text-decoration: none;
+    transition: .5s ease;
+    width: 200px;
+    text-align: center;
+}
+
+.mango a:hover
+{
+    background: #5f5f5f;
+    border: .3px solid rgb(228, 222, 222);
+    padding: $small;
 }
 
 .services
 {
-    position: relative;
-    height: auto;
     font-family: $Livvic;
     font-size: $font-size-large;
-    letter-spacing: 4px;
+    letter-spacing: 1px;
     text-transform: uppercase; 
-    margin: 0;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 200px 200px;;
-    grid-gap: 2px;
-
-    @media (max-width: $break-point) {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: auto;
-        grid-gap: 2px;
-        // flex-wrap: wrap;
-    }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .services > div
 {
     position: relative;
     height: 150px;
-    width: calc(80%);
-    border-radius: 4px;
+    width: 400px;
+    border-radius: 1px;
     background-size: auto;
-    margin-bottom: $large;
+    // margin-bottom: $large;
 }
 
 .services__container .overlay
@@ -47,6 +79,7 @@
     opacity: 0;
     transition: .75s ease;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     cursor: pointer;
@@ -70,9 +103,90 @@
 .services > div > img
 {
     position: relative;
-    border-radius: 4px;
+    border-radius: 1px;
     height: 150px;
     width: 100%; 
+}
+
+.card
+{
+    height: auto;
+    border: .3px solid rgb(228, 222, 222);
+    font-family: monospace;
+    font-size: $font-size-small;
+}
+
+.mission {
+    background: whitesmoke;
+    width: 100%;
+}
+
+.mission > div {
+    border: .3px solid rgb(228, 222, 222);
+    padding: $small;
+    margin: $small;
+}
+
+.mission-text {
+    text-transform: uppercase;
+}
+.community
+{
+    width: auto;
+    height: 400px;
+}
+
+.community > img
+{
+    position: relative;
+    width: auto;
+    height: 400px;
+}
+
+.try 
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.try > a
+{
+    display: inline-block;
+    text-decoration: none;
+}
+
+.sign {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign>a {
+    font-family: $Montserrat;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    width: 80%;
+    height: 50px;
+    background: none;
+    padding: $small;
+    text-align: center;
+    color: $off-white;
+    border: 4px solid $dark-blue;
+    border-radius: 50px;
+    transition: .5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign>a:hover {
+    background: $off-white;
+    border: 3px solid $off-white;
+    color: $dark-blue;
+    font-weight: 600;
+    font-size: x-large;
+
 }
 
 .footer-home
@@ -91,7 +205,6 @@
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: auto;
         grid-gap: 5px;
-        // flex-wrap: wrap;
     }
 
 }
@@ -159,76 +272,4 @@
 .explore li:hover
 {
     color: $off-white;
-}
-
-.mission
-{
-    background: #1a1e29;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    min-height: 100vh;
-    border-top: 1px solid $cream;
-    margin: 0;
-}
-
-.mission > div
-{
-    margin-top: 2.0rem;
-}
-
-.state
-{
-    font-family: $Montserrat;
-    font-size: 45px;
-    margin: 0;
-    text-align: center;
-    text-transform: uppercase;
-    padding: $small;
-    color: $dark-blue;
-}
-.mission-text
-{
-    text-transform: uppercase;
-    font-size: $font-size-large;
-    text-align: center;
-}
-
-.sign
-{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.sign > a 
-{
-    font-family: $Montserrat;
-    text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    width: 80%;
-    height: 50px;
-    background: none;
-    padding: $small;
-    text-align: center;
-    color: $off-white;
-    border: 4px solid $dark-blue;
-    border-radius: 50px;
-    transition: .5s ease;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.sign > a:hover
-{
-    background: $off-white;
-    border: 3px solid $off-white;
-    color: $dark-blue;
-    font-weight: 600;
-    font-size: x-large;
-
 }

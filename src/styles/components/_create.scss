@@ -1,0 +1,78 @@
+.create
+{
+    background: white;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    padding: auto;
+    font-family: $Montserrat;
+}
+
+.create > div 
+{
+    padding: $large;
+    color: #000;
+    letter-spacing: 1px;
+}
+
+.create > div > div
+{
+    border: .3px solid rgb(228, 222, 222);
+    padding: $small;
+    width: 100%;
+}
+
+.organize
+{
+    border-radius: 1px;
+    width: 100%;
+    height: auto;
+    color: #000;
+    background: $off-white;
+    position: relative;
+    display: flex;
+    
+}
+
+.organize > div
+{
+    flex-direction: column;
+    align-items: flex-end;
+    padding: $small;
+    width: 50%;
+    height: auto;
+    color: $dark-grey;
+}
+
+.organize > div > a
+{
+    border: 1px solid $cream;
+    border-radius: 3px;
+    background: $off-white;
+    color: $dark-blue;
+    margin-top: 3rem;
+    text-decoration: none;
+    padding: $small;
+    transition: 0.45s ease;
+}
+
+.organize > div > a:hover
+{
+    cursor: pointer;
+    border: 1px solid $cream;
+    background: $grey;
+    color: $off-white;
+}
+
+
+//Image
+.bracket
+{
+    width: 100%;
+    height:100%;
+}
+.bracket > img
+{
+    width:auto;
+    height: calc(100%-20px);
+}
