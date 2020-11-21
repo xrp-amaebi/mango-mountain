@@ -4,15 +4,14 @@ import { Header } from './Header';
 
 export const HomePage = (props) => (
     <div className={'page'}>
-        {/* <Header /> */}
+        <Header />
         <div className="mango">
                 <div>
                     <h2>MANGO MOUNTAIN</h2>
                     <p>Empowering the Esports Community</p>
                 </div>
-                <div>
-                    <a href="/create">Create an Event</a>
-                    <a href="#">Try a simple bracket</a>
+                <div >
+                    <a href="/create">Book an Event</a>
                 </div>
             </div>
         {/* <div className={'services'}>
@@ -76,17 +75,17 @@ export const HomePage = (props) => (
                 <img src="img/community.png" alt="community" />
             </div> 
             <div className="try">
-                <a href="/create">Try the Simple Bracket generator for singles </a>
-                <a href="/create">Try our event-driven API for Open tournaments</a> 
+                <a href="/create">Manage Brackets</a>
+                <a href="/create">Open Tournaments</a> 
             </div>
             <div className="sign">
                 <a href="#">Sign Up</a>
             </div>
         </div>
-        <footer className="footer-home">
+        <div className="drop">
                 <div className="explore">
                     <div>
-                        <div className="bold">MANGO</div>
+                        <div className="bold">  MANGO</div>
                         <div className='thin'>MOUNTAIN</div>
                         {/* <div className="image logo"><img src="/img/mango.png" alt="database" /></div>      */}
                     </div>
@@ -95,27 +94,41 @@ export const HomePage = (props) => (
                     </div>
                 </div>
                 <div className="explore">
-                    <div>EXPLORE</div> 
+                    <h5>EXPLORE</h5> 
                     <li>Tournament Generator</li>
                     <li>Commentary</li>
                     <li>Live Streaming</li>
                     <li>Coaching</li>
                 </div>  
                 <div className="explore">
-                    <div>RESOURCES</div> 
+                    <h5>RESOURCES</h5> 
                     <li>Knowledge Base</li>
                     <li>Terms</li>
                     <li>Privacy</li>
                     <li>Content</li>
                 </div> 
                 <div className="explore">
-                    <div>CONTACT</div> 
+                    <h5>CONTACT</h5> 
                     <li>Advertise</li>
                     <li>Blog</li>
                     <li>Social Media</li>
                     <li>Telepone</li>
                 </div>
-            </footer>
-    </div>
+            </div>
+            <div className="logo">
+                <div className="image">
+                    <img src="img/mango.png" />
+                </div>
+                <div className="image">
+                    <img src="img/dreamhack.png" />
+                </div>
+                <div className="image">
+                    <img src="img/kumite.png" />
+                </div>
+                <div className="image">
+                    <img src="img/evo.png" />
+                </div>
+            </div>
+        </div>
 );
 

@@ -15,7 +15,7 @@ export const CreateTourney = (props) => (
             <div>
                 <h2>Get Started</h2>
                 <p>
-                    Need help getting your Brackets set? Review our best practices to set your event up for success by reading our help guides.
+                    Need help getting set? Best practices are found in our help guides.
                 </p>
                 <div className="rift"></div>
                 <a>Get Started</a>
@@ -37,7 +37,7 @@ export const CreateTourney = (props) => (
                     Need help? Review our best practices to set your event up for success. Read our help guides.
                 </p>
                 <div className="rift"></div>
-                <a>Find Tourney</a>
+                <a>Find Event</a>
             </div>
             <div className="bracket image">
                 <img src="img/bracket.png" alt="bracket"/>
