@@ -117,7 +117,7 @@ export const HomePage = (props) => (
             </div>
             <div className="logo">
                 <div className="image">
-                    <img src="img/dreamhack.png" />
+                    <img src="img/DreamHack.png" />
                 </div>
                 <div className="image">
                     <img src="img/kumite.png" />
