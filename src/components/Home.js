@@ -7,8 +7,8 @@ export const HomePage = (props) => (
         <Header />
         <div className="mango">
                 <div>
-                    <h2>MANGO MOUNTAIN</h2>
-                    <p>Empowering the Esports Community</p>
+                    <h3>MANGO MOUNTAIN</h3>
+                    <div>Empowering Esports</div>
                 </div>
         </div>
         {/* <div className={'services'}>

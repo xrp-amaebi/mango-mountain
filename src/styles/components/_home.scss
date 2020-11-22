@@ -207,6 +207,14 @@
     align-items: center;
     background: rgba(142, 199, 252, 0.4);
     border: 1px solid rgba(228, 222, 222, 0.8);
+
+   @media (max-width: $break-point)
+    {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 1px solid $light;
+    }
 }
 
 .drop > div
@@ -221,6 +229,10 @@
 {
     color: $grey;
     list-style-type: none;
+
+    @media (max-width: $break-point) {
+        border-bottom: 2px solid $light;
+    }
 }
 
 .explore a 
