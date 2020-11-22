@@ -13,6 +13,7 @@ export const CreateTourney = (props) => (
        
         <div className="organize">
             <div>
+                <img src="/web/indus.png" alt="" />
                 <h2>Get Started</h2>
                 <p>
                     Need help getting set? Best practices are found in our help guides.
@@ -32,6 +33,7 @@ export const CreateTourney = (props) => (
         </div>
         <div className="organize">
             <div>
+                <img src="/web/ideas.png" alt="" />
                 <h2>Search</h2>
                 <p>
                     Need help? Review our best practices to set your event up for success. Read our help guides.

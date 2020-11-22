@@ -1,6 +1,5 @@
 .page
 {
-    width: 100%;
     background: $off-white;
     font-family: $Montserrat;
 }
@@ -24,28 +23,27 @@
     justify-content: center;
 }
 
-.mango a
+.book
 {
-    display: inline-block;
-    background: none;
-    border: 1px solid rgb(228, 222, 222); 
-    color: $cream;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: xx-large;
     cursor: pointer;
-    padding: $small;
-    background: none;
-    margin: $small;
-    border-radius: 1px;
-    text-decoration: none;
-    transition: .5s ease;
-    width: 200px;
-    text-align: center;
+    
 }
 
-.mango a:hover
+.book:hover
 {
-    background: #5f5f5f;
+    background: $light;
     border: .3px solid rgb(228, 222, 222);
-    padding: $small;
+}
+
+.book-link
+{
+    text-align: center;
+    position: relative;
+    width: 100%;
 }
 
 .services
@@ -130,10 +128,17 @@
 .mission-text {
     text-transform: uppercase;
 }
+
+.mission-text > div
+{
+    color: #aaa6a6;
+    font-size: small;
+}
 .community
 {
     width: auto;
     height: 400px;
+    background: $sky;
 }
 
 .community > img
@@ -196,9 +201,62 @@
     padding: $small;
     margin: $small;
     border: 1px solid rgb(228, 222, 222);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background: rgba(142, 199, 252, 0.4);
+    border: 1px solid rgba(228, 222, 222, 0.8);
 }
 
+.drop > div
+{
+    position: relative;
+    width: 100%;
+    margin: $small;
+    padding: $small;
+}
 
+.explore
+{
+    color: $grey;
+    list-style-type: none;
+}
+
+.explore a 
+{
+    text-decoration: none;
+    color: gray;
+}
+
+.explore li
+{
+    color: gray;
+    font-family: $Montserrat;
+    cursor: pointer;
+    font-size: small;
+}
+
+.footer-mountain
+{
+    padding: $small;
+    border: 1px solid $light;
+    margin: $small;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.thin
+{
+    color: $light;
+    font-size: $font-size-small;
+}
+
+.copyright
+{
+    font-size: xx-small;
+}
 .logo
 {
     display: flex;
