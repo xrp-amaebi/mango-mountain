@@ -38,7 +38,7 @@ export const CreateTourney = (props) => (
                     Need help? Review our best practices to set your event up for success. Read our help guides.
                 </p>
                 <div className="rift"></div>
-                <a>Find Event</a>
+                <a href="/cards">Find Event</a>
             </div>
             <div className="bracket image">
                 <img src="img/bracket.png" alt="bracket"/>

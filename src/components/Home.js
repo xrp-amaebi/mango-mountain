@@ -21,7 +21,7 @@ export const HomePage = (props) => (
                 <div>We aim to keep things simple for your team, with plenty more to explore</div>  
             </div>
             <div className="book">
-                <Link to="/create" className="book-link">{"{ Manage Brackets }"}</Link>
+                <a href="/create" className="book-link">{"{ Manage Brackets }"}</a>
             </div>
             <div className="community image">
                 <img src="img/community.png" alt="community" />

@@ -3,6 +3,7 @@
     background: $off-white;
     font-family: $Montserrat;
     position: absolute;
+    width: 100%;
 }
 
 .mango
@@ -75,6 +76,7 @@
     width: auto;
     height: 400px;
     background: $sky;
+    border-radius: 6px;
 }
 
 .community > img
@@ -166,7 +168,7 @@
 .explore li
 {
     color: $dark-grey;
-    font-family: $Livvic;
+    font-family: $Abel;
     // letter-spacing: 1px;
     cursor: pointer;
     font-size: x-small;
