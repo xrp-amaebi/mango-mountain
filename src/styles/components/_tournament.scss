@@ -1,0 +1,99 @@
+.tournament_home
+{
+    background: $off-white;
+    font-family: $Montserrat;
+    width: 100%;
+    height: 1000%;
+    position: absolute;
+}
+
+.card-container
+{
+    background: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: $small;
+
+    @media (max-width: $break-point) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+    }
+}
+
+.card
+{
+    width: 300px;
+    height: 680px;
+    box-sizing: border-box;
+    padding: $small;
+    margin: $small;
+    border: .2px solid $grey;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.card-image
+{
+    position: relative;
+    border-radius: 1px;
+    background-size: auto;
+    margin-bottom: $small;
+    border: none;
+}
+
+.card-image > img
+{
+    position: relative;
+    border-radius: 1px;
+    height: 150px;
+    width: 100%;  
+}
+
+.card-body
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: $small;
+    // border: .2px solid $light;
+}
+
+.card-body div 
+{
+    box-sizing: border-box;
+    border: .3px solid $light;
+    padding: $small;
+    margin: $small;
+    background: $light;
+    font-size: x-small;
+}
+
+.card-body a
+{
+    font-size: xx-small;
+    background: none;
+    text-decoration: none;
+    padding: $small;
+    transition: .5s ease;
+    text-align: center;
+    border: .3px solid $light;
+    margin: $small;
+}
+
+.card-body a:hover
+{
+    background: $sky;
+    color: black;
+}
+
+.material-icons
+{
+    font-size: xx-small;
+}
+
+a .material-icons
+{
+    font-size: small;
+}

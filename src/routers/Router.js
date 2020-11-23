@@ -7,7 +7,8 @@ import { About } from '../components/About';
 import { NotFound } from '../components/NotFound';
 import { CreateTourney } from '../components/CreateTourney';
 import TierList from '../components/TierList';
-import TournamentPage from '../components/TournamentPage';
+import { Tournaments } from '../components/TournamentPage';
+import TournamentDashBoard from '../components/TournamentDashBoard';
 import createHistory from 'history/createBrowserHistory';
 
 
@@ -19,7 +20,8 @@ export const Router = () => (
             <Switch>
                 <Route path="/" component={HomePage} exact={true} />
                 <Route path="/guides" component={Universal}/>
-                <Route path="/tournament" component={TournamentPage}/>
+                <Route path="/tournaments" component={Tournaments}/>
+                <Route path="/tournaments/:id" component={TournamentDashBoard}/>
                 <Route path="/create" component={CreateTourney}/>
                 <Route path="/tierlist" component={TierList} />
                 <Route path="/about" component={About}/>

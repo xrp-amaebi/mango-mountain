@@ -52,6 +52,13 @@ export const HomePage = (props) => (
                     <li>Social Media</li>
                     <li>Telepone</li>
                 </div>
+                <div className="explore">
+                    <h6>TOURNAMENT</h6>
+                    <li>Guides</li>
+                    <li>Brackets</li>
+                    <li>Overview</li>
+                    <li>Standings</li>
+                </div>
             </div>
             <div className="footer-mountain">
                 <div>

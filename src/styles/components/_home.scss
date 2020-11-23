@@ -126,7 +126,6 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    // background: rgba(142, 199, 252, 0.1);
  
    @media (max-width: $break-point)
     {
@@ -155,7 +154,7 @@
     list-style-type: none;
 
     @media (max-width: $break-point) {
-        border-bottom: 2px solid $light;
+        border-bottom: .3px solid $light;
     }
 }
 
@@ -169,7 +168,6 @@
 {
     color: $dark-grey;
     font-family: $Abel;
-    // letter-spacing: 1px;
     cursor: pointer;
     font-size: x-small;
 }
@@ -187,7 +185,7 @@
 .thin
 {
     color: $light;
-    font-size: $font-size-small;
+    font-size: x-small;
 }
 
 .copyright

@@ -35,10 +35,10 @@ export const CreateTourney = (props) => (
                 <img src="/web/ideas.png" alt="" />
                 <h2>Search</h2>
                 <p>
-                    Need help? Review our best practices to set your event up for success. Read our help guides.
+                    Looking for an Event? You can register for Free on published events to participate.
                 </p>
                 <div className="rift"></div>
-                <a href="/cards">Find Event</a>
+                <a href="/tournaments">Find Event</a>
             </div>
             <div className="bracket image">
                 <img src="img/bracket.png" alt="bracket"/>
