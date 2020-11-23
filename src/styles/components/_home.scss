@@ -2,6 +2,7 @@
 {
     background: $off-white;
     font-family: $Montserrat;
+    position: absolute;
 }
 
 .mango
@@ -9,10 +10,6 @@
     background: $off-white;
     width: 100%;
     letter-spacing: 1px;
-    position: fixed;
-    top: 0;
-    opacity: 1;
-    z-index: 1000;
 }
 
 .mango > div
@@ -25,6 +22,7 @@
     height: 150px;
     border: .3px solid rgb(228, 222, 222);
     justify-content: center;
+    font-size: x-small;
 }
 
 .book
@@ -32,7 +30,7 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    font-size: large;
+    font-size: x-small;
     cursor: pointer;
     
 }
@@ -70,7 +68,7 @@
 .mission-text > div
 {
     color: #aaa6a6;
-    font-size: small;
+    font-size: x-small;
 }
 .community
 {
@@ -103,8 +101,9 @@
 .sign > a
 {
     position: relative;
+    font-size: x-small;
     text-decoration: none;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     background: none;
     text-align: center;
     color: $dark-blue;
@@ -118,23 +117,21 @@
 
 .drop
 {
+    border: 1px solid $light;
     padding: $small;
     margin: $small;
-    border: 1px solid rgb(228, 222, 222);
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background: rgba(142, 199, 252, 0.1);
-    border: 1px solid rgba(228, 222, 222, 0.8);
-
+    // background: rgba(142, 199, 252, 0.1);
+ 
    @media (max-width: $break-point)
     {
         background: none;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        border-bottom: 1px solid $light;
     }
 }
 
@@ -152,7 +149,7 @@
 
 .explore
 {
-    color: $grey;
+    color: black;
     list-style-type: none;
 
     @media (max-width: $break-point) {
@@ -163,15 +160,16 @@
 .explore a 
 {
     text-decoration: none;
-    color: gray;
+    color: $dark-grey;
 }
 
 .explore li
 {
-    color: gray;
-    font-family: $Montserrat;
+    color: $dark-grey;
+    font-family: $Livvic;
+    // letter-spacing: 1px;
     cursor: pointer;
-    font-size: small;
+    font-size: x-small;
 }
 
 .footer-mountain

@@ -10,7 +10,6 @@ export const CreateTourney = (props) => (
             <h2>Create a Tournament</h2>
             <h5>You can begin building your community Profile by organising a competitive experience.</h5>
         </div>
-       
         <div className="organize">
             <div>
                 <img src="/web/indus.png" alt="" />

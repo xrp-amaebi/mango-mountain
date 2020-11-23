@@ -1,6 +1,7 @@
 import React from 'react';
 import { Header } from './Header';
 import { Link } from 'react-router-dom';
+import { Toast } from "toaster-js";
 
 export const HomePage = (props) => (
     <div className={'page'}>
@@ -20,7 +21,7 @@ export const HomePage = (props) => (
                 <div>We aim to keep things simple for your team, with plenty more to explore</div>  
             </div>
             <div className="book">
-                <Link to="/create" className="book-link"><i className="material-icons">web</i> Manage Brackets</Link>
+                <Link to="/create" className="book-link">{"{ Manage Brackets }"}</Link>
             </div>
             <div className="community image">
                 <img src="img/community.png" alt="community" />
