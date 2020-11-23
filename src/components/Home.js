@@ -4,63 +4,13 @@ import { Link } from 'react-router-dom';
 
 export const HomePage = (props) => (
     <div className={'page'}>
-        <Header />
+        {/* <Header /> */}
         <div className="mango">
-                <div>
-                    <h3>MANGO MOUNTAIN</h3>
-                    <div>Empowering Esports</div>
-                </div>
+            <div>
+                <h4>MANGO | MOUNTAIN</h4>
+                <div>EMPOWERING ESPORTS</div>
+            </div>
         </div>
-        {/* <div className={'services'}>
-                <div className="services__container image">
-                    <img src="img/sfv.png" alt="FIrewood" />
-                    <div className="overlay">
-                        <div className={'text'}>STREET FIGHTER V</div>
-                    </div><br/>
-                </div>
-                <div class="card">
-                    <p>21 July 2021 - 24th July 2021</p>
-                    <p>Double Eliminaton Brackets</p>
-                    <p>Silver Bird Galleria, Ikoyi Lagos.</p>
-                    <p>Offline</p>
-                </div>
-                <div className="services__container image">
-                    <img src="img/tekken.png" alt="FIrewood" />
-                    <div className="overlay">
-                        <div className={'text'}>TEKKEN 7</div>
-                    </div>
-                </div>
-                <div class="card">
-                    <p>21 July 2021 - 24th July 2021</p>
-                    <p>Double Eliminaton Brackets</p>
-                    <p>Silver Bird Galleria, Ikoyi Lagos.</p>
-                    <p>Offline</p>
-                </div>
-                <div className="services__container image">
-                    <img src="img/ns4.png" alt="FIrewood" />
-                    <div className="overlay">
-                        <div className={'text'}>NARUTO NINJA STORM 4</div>
-                    </div>
-                </div>
-                <div class="card">
-                    <p>21 July 2021 - 24th July 2021</p>
-                    <p>Double Eliminaton Brackets</p>
-                    <p>Silver Bird Galleria, Ikoyi Lagos.</p>
-                    <p>Offline</p>
-                </div>
-                <div className="services__container image">
-                    <img src="img/mk.png" alt="FIrewood"/>
-                    <div className="overlay">
-                        <div className={'text'}>UM11K</div>
-                    </div>
-                </div>
-                <div class="card">
-                    <p>21 July 2021 - 24th July 2021</p>
-                    <p>Double Eliminaton Brackets</p>
-                    <p>Silver Bird Galleria, Ikoyi Lagos.</p>
-                    <p>Offline</p>
-                </div>
-            </div> */}
         <div className='mission'>
             <div className="mission-text">
                 <div className="image">
@@ -70,17 +20,13 @@ export const HomePage = (props) => (
                 <div>We aim to keep things simple for your team, with plenty more to explore</div>  
             </div>
             <div className="book">
-                <Link to="/create" className="book-link"><i className="material-icons">date_range</i></Link>
+                <Link to="/create" className="book-link"><i className="material-icons">web</i> Manage Brackets</Link>
             </div>
             <div className="community image">
                 <img src="img/community.png" alt="community" />
             </div> 
-            <div className="try">
-                <a href="/create">Manage Brackets</a>
-                <a href="/create">Open Tournaments</a> 
-            </div>
             <div className="sign">
-                <a href="#">Sign Up</a>
+                <a href="#"><i className="material-icons">subdirectory_arrow_right</i> Sign Up</a>
             </div>
         </div>
         <div className="drop">

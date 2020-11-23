@@ -1,0 +1,53 @@
+.services {
+    font-family: $Livvic;
+    font-size: $font-size-large;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.services>div {
+    position: relative;
+    height: 150px;
+    width: 400px;
+    border-radius: 1px;
+    background-size: auto;
+    // margin-bottom: $large;
+}
+
+.services__container .overlay {
+    position: absolute;
+    background: rgba(0, 0, 0, .91);
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .75s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.services__container:hover .overlay {
+    opacity: 1;
+}
+
+.overlay .text {
+    color: $off-white;
+    font-family: $Abel;
+    text-align: center;
+    font-weight: 600;
+    font-size: $font-size-large;
+    letter-spacing: 6px;
+}
+
+.services>div>img {
+    position: relative;
+    border-radius: 1px;
+    height: 150px;
+    width: 100%;
+}

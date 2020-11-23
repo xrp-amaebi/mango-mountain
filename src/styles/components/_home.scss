@@ -9,6 +9,10 @@
     background: $off-white;
     width: 100%;
     letter-spacing: 1px;
+    position: fixed;
+    top: 0;
+    opacity: 1;
+    z-index: 1000;
 }
 
 .mango > div
@@ -28,7 +32,7 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    font-size: xx-large;
+    font-size: large;
     cursor: pointer;
     
 }
@@ -44,74 +48,8 @@
     text-align: center;
     position: relative;
     width: 100%;
-}
-
-.services
-{
-    font-family: $Livvic;
-    font-size: $font-size-large;
-    letter-spacing: 1px;
-    text-transform: uppercase; 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.services > div
-{
-    position: relative;
-    height: 150px;
-    width: 400px;
-    border-radius: 1px;
-    background-size: auto;
-    // margin-bottom: $large;
-}
-
-.services__container .overlay
-{
-    position: absolute;
-    background: rgba(0, 0, 0, .91);
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .75s ease;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-}
-
-.services__container:hover .overlay
-{
-    opacity: 1;
-}
-
-.overlay .text
-{
-    color: $off-white;
-    font-family: $Abel;
-    text-align: center;
-    font-weight: 600;
-    font-size: $font-size-large;
-    letter-spacing: 6px;
-}
-
-.services > div > img
-{
-    position: relative;
-    border-radius: 1px;
-    height: 150px;
-    width: 100%; 
-}
-
-.card
-{
-    height: auto;
-    border: .3px solid rgb(228, 222, 222);
-    font-family: monospace;
-    font-size: $font-size-small;
+    text-decoration: none;
+    text-transform: uppercase;
 }
 
 .mission {
@@ -148,52 +86,34 @@
     height: 400px;
 }
 
-.try 
+.sign
 {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-}
-.try > a 
-{
-    display: inline-block;
-    text-decoration: none;
-}
-
-.try > a:hover
-{
-    text-decoration: underline;
-    color: $dark-grey;
-}
-
-.sign {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-transform: uppercase;
+    transition: .5s ease;
 }
 
-.sign > a {
+.sign:hover
+{
+    background: $light;
+}
+
+.sign > a
+{
+    position: relative;
     text-decoration: none;
-    text-transform: uppercase;
     letter-spacing: 1px;
-    width: 80%;
-    height: 50px;
     background: none;
-    padding: $small;
     text-align: center;
     color: $dark-blue;
-    border-radius: 50px;
     transition: .5s ease;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.sign > a:hover {
-    background: $off-white;
-    padding: $small;
-    color: $cream;
-    font-size: large;
+    cursor: pointer;
+    width: 100%;
 }
 
 .drop
@@ -203,13 +123,14 @@
     border: 1px solid rgb(228, 222, 222);
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    background: rgba(142, 199, 252, 0.4);
+    background: rgba(142, 199, 252, 0.1);
     border: 1px solid rgba(228, 222, 222, 0.8);
 
    @media (max-width: $break-point)
     {
+        background: none;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -221,8 +142,12 @@
 {
     position: relative;
     width: 100%;
-    margin: $small;
-    padding: $small;
+    @media (max-width: $break-point)
+    {
+        margin: $small;
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .explore
