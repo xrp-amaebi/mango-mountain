@@ -27,7 +27,7 @@ export const HomePage = (props) => (
                 <img src="img/community.png" alt="community" />
             </div> 
             <div className="sign">
-                <a href="#"><i className="material-icons">subdirectory_arrow_right</i> Sign Up</a>
+                <a href="sign"><i className="material-icons">subdirectory_arrow_right</i> Sign Up</a>
             </div>
         </div>
         <div className="drop">

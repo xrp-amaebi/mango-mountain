@@ -5,7 +5,8 @@ import { Tournament } from './TournamentPage';
 export const CreateTourney = (props) => (
 <div className="create">
     <div>
-        <a href="/">{"< Back to MangoMountain"}</a>
+            <a href="/"><i className="material-icons">arrow_back</i> </a>
+        {/* <span className="rift"></span> */}
         <div>
             <h2>Create a Tournament</h2>
             <h5>You can begin building your community Profile by organising a competitive experience.</h5>

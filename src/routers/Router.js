@@ -5,6 +5,7 @@ import { Universal } from '../components/Universal';
 import DashBoard from '../selectors/__data__';
 import { About } from '../components/About';
 import { NotFound } from '../components/NotFound';
+import { SignUp } from '../components/SignUp';
 import { CreateTourney } from '../components/CreateTourney';
 import TierList from '../components/TierList';
 import { Tournaments } from '../components/TournamentPage';
@@ -25,6 +26,7 @@ export const Router = () => (
                 <Route path="/create" component={CreateTourney}/>
                 <Route path="/tierlist" component={TierList} />
                 <Route path="/about" component={About}/>
+                <Route path="/sign" component={SignUp}/>
                 <Route path="/:id" component={DashBoard} />
                 <Route component={NotFound} />
             </Switch>
