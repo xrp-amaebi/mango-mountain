@@ -6,6 +6,9 @@ export const Tournaments = (props) => {
     const kini = ''
     return(
         <div className={'tournament_home'}>
+        <div className='tournament_header'>
+            <h5><i className="material-icons">assignment</i> | FEATURED TOURNAMENTS </h5>
+        </div>
         <div className="card-container">
             <div className='card'>
                 <div className="card-image image">
@@ -17,7 +20,7 @@ export const Tournaments = (props) => {
                         <div><i className="material-icons">location_disabled</i> | ONLINE (Europe, North-America, Asia)</div>
                         <div><i className="material-icons">call</i> | +(555) - 231-460</div>
                         <div><i className="material-icons">email</i> | evo@supportmail.com</div>
-                        <a href={`tournament/${kini}`}><i className="material-icons">remove_red_eye</i></a>
+                        <a href={`tournament/${kini}`}><i className="material-icons">visibility</i></a>
                 </div>   
             </div>
 
@@ -26,7 +29,7 @@ export const Tournaments = (props) => {
                     <img src="/img/carousel/6.jpg" alt="dreamhack__event__card"/>
                 </div>
                 <div className="card-body">
-                        <div><h4><i className="material-icons">verified_user</i> | DREAMHACK WINNERSCUP SERIES</h4></div>
+                        <div><h4><i className="material-icons">verified_user</i> | DREAMHACK WINNERSCUP </h4></div>
                     <div><i className="material-icons">access_time</i> | 16/08/2025 - 20/08/2025</div>
                     <div>OFFLINE - 0xygen Arena, Grand Palace</div>
                     <div><i className="material-icons">location_on</i> | Massachusstets, USA</div>
