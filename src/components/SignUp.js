@@ -16,7 +16,7 @@ export const SignUp = (props) => {
                         </div>
                         <div className='field-username'>
                             <div className="field-name">
-                                <div><input type="text" placeholder="Username" /></div>
+                                <div><input type="text" placeholder="Tag - Username" /></div>
                                 <div className='right'><input type="text" placeholder="@gmail" /></div>
                             </div>
                             <div className='username'>You can use letters, numbers and periods</div>
@@ -26,11 +26,11 @@ export const SignUp = (props) => {
                         </div>
                         <div className='password'>
                             <div className="field-name">
-                                <input type="password" placeholder="Password"/>
-                                <input type="password" placeholder="Confirm"/>
-                                <div className='icon'>
+                                <div><input type="password" placeholder="Password" /></div>
+                                <div className="right"><input type="password" placeholder="Confirm" /></div>
+                                {/* <div className='icon'>
                                     <i className="material-icons">visibility</i>
-                                </div>
+                                </div> */}
                             </div> 
                             <div className="username">Use 8 or more characters with a mix of letters, numbers & symbol.</div>
                         </div>
@@ -56,15 +56,24 @@ export const SignUp = (props) => {
                 </div>
             </div>
             <div className='language'>
-                <div>
-                    <form action=""></form>
+                <div className='privacy'>
+                    <div>
+                        <form action="submit">
+                            <select className='language-form'>
+                                <option value="default">English (United States)</option>
+                                <option value="german">German</option>
+                                <option value="french">French</option>
+                                <option value="french">Korean</option>
+                            </select>
+                        </form>
+                    </div>
+                    <div id="privacy">
+                        <span><a href="#">Help</a></span>
+                        <span><a href="#">Privacy</a></span>
+                        <span><a href="#">Terms</a></span>
+                    </div>
                 </div>
-                <div>
-                    <span>Help</span>
-                    <span>Privacy</span>
-                    <span>Terms</span>
-                </div>
-            </div>
+            </div>   
         </div>
     );
 };

@@ -6,6 +6,7 @@
     min-height: 100vh;
     position: absolute;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -18,6 +19,7 @@
     height: auto;
     padding: $extra;
     display: flex;
+    width: 800px;
 }
 
 #logo
@@ -62,15 +64,18 @@
 
 .field-name
 {
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     width: 100%;
     display: flex;
-    justify-content: right;
+    
+    @media (max-width: $break-point) {
+        flex-direction: column;
+    }
 }
 
 .field-name > div 
 {
-    width: 100%;
+    width: 50%;
     height: auto;
     padding: 8px 0 0;
     box-sizing: border-box;
@@ -81,16 +86,27 @@
     position: relative;
     border: 1px solid $light;
     border-radius: 6px;
-    padding: $small;
+    padding: 16px;
     font-size: 14px;
     letter-spacing: 1px;
+    transition: ease-in-out, width .35s ease-in-out;
+
+    @media (max-width: $break-point) {
+        width: 100%;
+    }
 }
 
 .field-name > div > input:hover
 {
-    border: 1.5px solid #4592f7;
-    padding: $small;
+    border: 1px solid #4592f7;
 }
+
+.field-name>div>input:focus
+{
+    border: 3px solid #4592f7;
+
+}
+
 .icon 
 {
     display: flex;
@@ -99,6 +115,7 @@
     text-align: center;
     background: $off-white;
 }
+
 .icon:hover
 {
     background: transparentize($color: $light, $amount: 0.75);
@@ -142,7 +159,7 @@
 {
     text-decoration: none;
     color: #1a73e8;
-    padding: 12px 0 12px;
+    padding: 16px 0 16px;
     display: inline-block;
 }
 
@@ -171,6 +188,61 @@
     display: flex;
     justify-content: space-between;
     padding: 24px 0 0;
+}
+.language
+{
+    display: inline-block;
+    padding: $small 0 0;
+    width: 890px;
+    padding: 2.1rem 0 0;
+
+    @media (max-width: $break-point)
+    {
+        width: $break-point;
+    }
+}
+
+.language .privacy
+{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.language form
+{
+    background: grey;
+}
+
+.language-form
+{
+    padding: 8px;
+    background: whitesmoke;
+    border: none;
+}
+
+.language-form > option
+{
+    background: transparentize($color: $sky, $amount: .65);
+    padding: 6px;
+}
+
+.language #privacy
+{
+    position: relative;
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 8px;
+}
+
+.language span > a
+{
+    text-decoration: none;
+    color: grey;
+    font-size: small;
+    font-weight: lighter;
 }
 
 // .services {
