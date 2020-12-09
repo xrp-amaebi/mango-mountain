@@ -11,23 +11,23 @@ export const SignUp = (props) => {
                     <h1><span class="create-account-text">Create your User Account</span></h1>
                     <div className="field-container">
                         <div className="field-name">
-                            <div><input type="text" placeholder="First name" /></div>
-                            <div className='right'><input type="text" placeholder="Last name" /></div>
+                            <input type="text" placeholder="First name" />
+                            <div id='lastname'></div><input type="text" placeholder="Last name" />
                         </div>
-                        <div className='field-username'>
-                            <div className="field-name">
-                                <div><input type="text" placeholder="Tag - Username" /></div>
-                                <div className='right'><input type="text" placeholder="@gmail" /></div>
-                            </div>
-                            <div className='username'>You can use letters, numbers and periods</div>
+                       
+                        <div className="field-name">
+                            <input type="text" placeholder="Tag - Username" />
+                            <div id="email"><input type="text" placeholder="@gmail" /></div>
                         </div>
+                        <div className='username'>You can use letters, numbers and periods</div>
+                        
                         <div>
                             <a href="#" className="next-input">Try some brackets anonymously</a>
                         </div>
                         <div className='password'>
                             <div className="field-name">
-                                <div><input type="password" placeholder="Password" /></div>
-                                <div className="right"><input type="password" placeholder="Confirm" /></div>
+                                <input type="password" placeholder="Password" />
+                                <div id='confirm'><input type="password" placeholder="Confirm" /></div>
                                 {/* <div className='icon'>
                                     <i className="material-icons">visibility</i>
                                 </div> */}
@@ -37,7 +37,7 @@ export const SignUp = (props) => {
                     </div>
                     <div className="accounts-redirect">
                         <div>
-                            <a href="#" className="next-input" >Log in instead</a>
+                            <a href="#" className="next-input">Log in instead</a>
                         </div>
                         <div>
                             <a href="#" className="next-field">Next</a>

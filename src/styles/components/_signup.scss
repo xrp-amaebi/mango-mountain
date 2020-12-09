@@ -15,11 +15,42 @@
 {
     border: 1px solid $light;
     border-radius: 12px;
-    min-height: 500px;
+    min-height: 600px;
     height: auto;
     padding: $extra;
     display: flex;
-    width: 800px;
+
+    @media (max-width: $break-point) {
+        padding: $large;
+        border: none;
+    }
+}
+
+#lastname
+{
+    padding: 24px 0 0;
+}
+
+#confirm
+{
+    padding: 24px 0 0;
+    width: 100%;
+}
+
+#confirm > input
+{
+    width: 94%;
+}
+
+#email
+{
+    padding: 24px 0 0;
+    width: 94%;
+}
+
+#email > input
+{
+    width: 100%;
 }
 
 #logo
@@ -43,8 +74,8 @@
 .create-account-text
 {
     font-family: $Montserrat;
-    font-size: x-large;
-    font-weight: 100;
+    font-size: large;
+    font-weight: 400;
 }
 
 .field-container
@@ -73,38 +104,25 @@
     }
 }
 
-.field-name > div 
-{
-    width: 50%;
-    height: auto;
-    padding: 8px 0 0;
-    box-sizing: border-box;
-}
-
 .field-name input 
 {
     position: relative;
     border: 1px solid $light;
-    border-radius: 6px;
-    padding: 16px;
+    border-radius: 5px;
+    padding: 8px;
     font-size: 14px;
     letter-spacing: 1px;
     transition: ease-in-out, width .35s ease-in-out;
 
     @media (max-width: $break-point) {
-        width: 100%;
+        // width: 100%;
     }
 }
 
-.field-name > div > input:hover
+.field-name > div > input:focus
 {
-    border: 1px solid #4592f7;
-}
-
-.field-name>div>input:focus
-{
-    border: 3px solid #4592f7;
-
+    outline: none;
+    border: 2.5px solid #4592f7;
 }
 
 .icon 
@@ -132,6 +150,12 @@
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
+
+    @media (max-width: $break-point) {
+       display: flex;
+       justify-content: flex-start;
+       align-items: center;
+    }
 }
 
 
@@ -140,6 +164,12 @@
     font-size: 14px;
     line-height: 1.4286;
 }
+
+.figure figcaption
+{
+    padding: $small;
+}
+
 
 .account-name
 {
@@ -189,6 +219,7 @@
     justify-content: space-between;
     padding: 24px 0 0;
 }
+
 .language
 {
     display: inline-block;
@@ -198,20 +229,24 @@
 
     @media (max-width: $break-point)
     {
-        width: $break-point;
+        width: auto;
     }
 }
 
 .language .privacy
 {
-    display: flex;
-    justify-content: space-between;
+    position: relative;
+    width: 100%;
+    display: inline-block;
 
+    @media (max-width: $break-point) {
+        width: auto;
+    }
 }
 
 .language form
 {
-    background: grey;
+    background: none;
 }
 
 .language-form
@@ -219,6 +254,13 @@
     padding: 8px;
     background: whitesmoke;
     border: none;
+    outline: none;
+
+    @media(max-width: $break-point)
+    {
+        font-size: small;
+        width: 200px;
+    }
 }
 
 .language-form > option
@@ -230,7 +272,7 @@
 .language #privacy
 {
     position: relative;
-    width: 20%;
+    width: 200px;
     display: flex;
     justify-content: space-between;
     align-content: center;
@@ -243,6 +285,11 @@
     color: grey;
     font-size: small;
     font-weight: lighter;
+
+    @media(max-width: $break-point)
+    {
+        font-size: xx-small;
+    }
 }
 
 // .services {
