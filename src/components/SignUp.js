@@ -14,7 +14,6 @@ export const SignUp = (props) => {
                             <input type="text" placeholder="First name" />
                             <div id='lastname'></div><input type="text" placeholder="Last name" />
                         </div>
-                       
                         <div className="field-name">
                             <input type="text" placeholder="Tag - Username" />
                             <div id="email"><input type="text" placeholder="@gmail" /></div>

@@ -98,6 +98,7 @@
     letter-spacing: 1px;
     width: 100%;
     display: flex;
+    justify-content: space-between;
     
     @media (max-width: $break-point) {
         flex-direction: column;
@@ -107,6 +108,7 @@
 .field-name input 
 {
     position: relative;
+    background: none;
     border: 1px solid $light;
     border-radius: 5px;
     padding: 8px;
@@ -119,7 +121,7 @@
     }
 }
 
-.field-name > div > input:focus
+.field-name  input:focus
 {
     outline: none;
     border: 2.5px solid #4592f7;
@@ -222,13 +224,12 @@
 
 .language
 {
-    display: inline-block;
-    padding: $small 0 0;
     width: 890px;
     padding: 2.1rem 0 0;
 
     @media (max-width: $break-point)
     {
+        display: inline-block;
         width: auto;
     }
 }
@@ -237,10 +238,12 @@
 {
     position: relative;
     width: 100%;
-    display: inline-block;
+    display: flex;
+    justify-content: space-between;
 
     @media (max-width: $break-point) {
         width: auto;
+        display: inline-block;
     }
 }
 
