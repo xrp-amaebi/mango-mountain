@@ -7,6 +7,7 @@ import { About } from '../components/About';
 import { NotFound } from '../components/NotFound';
 import { SignUp } from '../components/SignUp';
 import { CreateTourney } from '../components/CreateTourney';
+import { TournamentInfo } from '../components/TournamentInfo'
 import TierList from '../components/TierList';
 import { Tournaments } from '../components/TournamentPage';
 import TournamentDashBoard from '../components/TournamentDashBoard';

@@ -26,32 +26,6 @@
     }
 }
 
-#lastname
-{
-    padding: 24px 0 0;
-}
-
-#confirm
-{
-    padding: 24px 0 0;
-    width: 100%;
-}
-
-#confirm > input
-{
-    width: 94%;
-}
-
-#email
-{
-    padding: 24px 0 0;
-    width: 94%;
-}
-
-#email > input
-{
-    width: 100%;
-}
 
 #logo
 {
@@ -64,11 +38,6 @@
     padding: 16px 0 0;
     color: #202124;
     font-family: 'Google Sans','Noto Sans Myanmar UI',arial,sans-serif;
-}
-.username
-{
-    font-size: small;
-    padding: 10px;
 }
 
 .create-account-text
@@ -100,7 +69,8 @@
     display: flex;
     justify-content: space-between;
     
-    @media (max-width: $break-point) {
+    @media (max-width: $break-point)
+    {
         flex-direction: column;
     }
 }
@@ -109,6 +79,7 @@
 {
     position: relative;
     background: none;
+    background: transparentize($color: $sky, $amount: 0.3);
     border: 1px solid $light;
     border-radius: 5px;
     padding: 8px;
@@ -117,8 +88,13 @@
     transition: ease-in-out, width .35s ease-in-out;
 
     @media (max-width: $break-point) {
-        // width: 100%;
+        width: 100%;
     }
+}
+
+.field-name:nth-child(2)
+{
+    padding: 24px 0 0;
 }
 
 .field-name  input:focus

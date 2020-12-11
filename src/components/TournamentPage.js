@@ -24,7 +24,7 @@ export const Tournaments = (props) => {
                 </div>   
             </div>
 
-            <div className='card'>
+            <div className='card'> 
                 <div className="card-image image">
                     <img src="/img/carousel/6.jpg" alt="dreamhack__event__card"/>
                 </div>

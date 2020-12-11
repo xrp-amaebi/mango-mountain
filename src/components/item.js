@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
-export default styled.div`
+export default Atag = styled.div`
     display: flex;
-    justiy-content: center;
+    justify-content: center;
     align-items: center;
     height: 250px;
     width: 100%;

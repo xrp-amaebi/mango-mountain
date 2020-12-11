@@ -15,24 +15,21 @@ export const SignUp = (props) => {
                             <div id='lastname'></div><input type="text" placeholder="Last name" />
                         </div>
                         <div className="field-name">
-                            <input type="text" placeholder="Tag - Username" />
+                            <div id='tag'><input type="text" placeholder="Tag - Username" /></div>
                             <div id="email"><input type="text" placeholder="@gmail" /></div>
                         </div>
-                        <div className='username'>You can use letters, numbers and periods</div>
+                        <div className>You can use letters, numbers and periods</div>
                         
                         <div>
                             <a href="#" className="next-input">Try some brackets anonymously</a>
                         </div>
-                        <div className='password'>
-                            <div className="field-name">
-                                <input type="password" placeholder="Password" />
-                                <div id='confirm'><input type="password" placeholder="Confirm" /></div>
-                                {/* <div className='icon'>
-                                    <i className="material-icons">visibility</i>
-                                </div> */}
-                            </div> 
-                            <div className="username">Use 8 or more characters with a mix of letters, numbers & symbol.</div>
-                        </div>
+                        
+                        <div className="field-name">
+                            <input type="password" placeholder="Password" />
+                            <div id='confirm'><input type="password" placeholder="Confirm" /></div>
+                        </div> 
+                            <div>Use 8 or more characters with a mix of letters, numbers & symbol.</div>
+                        
                     </div>
                     <div className="accounts-redirect">
                         <div>
@@ -48,7 +45,7 @@ export const SignUp = (props) => {
                         <figure className='figure'>
                             <img src="img/account.svg" alt="accounts" width="244" height="244"/>
                             <figcaption>
-                                One Account to manage all your Brackets.
+                                One Account to manage all your Tournaments.
                             </figcaption>
                         </figure>
                     </div>
